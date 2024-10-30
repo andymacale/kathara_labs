@@ -1,0 +1,1 @@
+BOOT_IMAGE=/boot/vmlinuz-6.8.0-47-generic root=UUID=9ce3c598-7b93-4d0e-9282-3bdd87f39983 ro quiet splash noprompt noshell automatic-ubiquity debian-installer/locale=en_US keyboard-configuration/layoutcode=us languagechooser/language-name=English localechooser/supported-locales=en_US.UTF-8 countrychooser/shortlist=US -- vt.handoff=7

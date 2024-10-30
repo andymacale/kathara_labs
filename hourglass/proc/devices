@@ -1,0 +1,70 @@
+Character devices:
+  1 mem
+  4 /dev/vc/0
+  4 tty
+  4 ttyS
+  5 /dev/tty
+  5 /dev/console
+  5 /dev/ptmx
+  5 ttyprintk
+  7 vcs
+ 10 misc
+ 13 input
+ 21 sg
+ 29 fb
+ 89 i2c
+108 ppp
+116 alsa
+128 ptm
+136 pts
+180 usb
+189 usb_device
+204 ttyMAX
+207 ttymxc
+226 drm
+236 uio
+237 hidraw
+238 rpmb
+239 ttyDBC
+240 ttyOWL
+241 ttyMSM
+242 bsg
+243 watchdog
+244 remoteproc
+245 ptp
+246 pps
+247 rtc
+248 dma_heap
+249 dax
+250 dimmctl
+251 ndctl
+252 tpm
+253 ttyMV
+254 gpiochip
+261 accel
+
+Block devices:
+  7 loop
+  8 sd
+  9 md
+ 11 sr
+ 65 sd
+ 66 sd
+ 67 sd
+ 68 sd
+ 69 sd
+ 70 sd
+ 71 sd
+128 sd
+129 sd
+130 sd
+131 sd
+132 sd
+133 sd
+134 sd
+135 sd
+179 mmc
+252 device-mapper
+253 virtblk
+254 mdp
+259 blkext

@@ -1,0 +1,5 @@
+enabled
+interpreter /usr/bin/python3.12
+flags: 
+offset 0
+magic cb0d0d0a

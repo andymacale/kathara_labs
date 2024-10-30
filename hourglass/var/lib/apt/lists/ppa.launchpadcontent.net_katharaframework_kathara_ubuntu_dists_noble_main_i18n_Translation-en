@@ -1,0 +1,6 @@
+Package: kathara
+Description-md5: 0c76a247ce30c0d5c2ee35d1b9f442fa
+Description-en: A lightweight container-based network emulation tool.
+ It can be really helpful in showing interactive demos/lessons,
+ testing production networks in a sandbox environment, or developing new network protocols.
+

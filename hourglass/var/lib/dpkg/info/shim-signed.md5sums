@@ -1,0 +1,15 @@
+32325d90b233b185f741e5f7f2b2fb41  usr/lib/shim/BOOTAA64.CSV
+c5fa4c79c8052b4f98282af9748bf258  usr/lib/shim/fbaa64.efi
+249f59732c8de395361e5a4c07d40752  usr/lib/shim/is-not-revoked
+dec79e7007d09e543cacb486d41ec433  usr/lib/shim/mmaa64.efi
+acce88b68e7f2b6587089a7db771b510  usr/lib/shim/mok/openssl.cnf
+272d5fc1dbb362d9111a16807e42e3e0  usr/lib/shim/shimaa64.efi
+fcaf91aa379858def05f68fe7d071a45  usr/lib/shim/shimaa64.efi.dualsigned
+a84ba478507ecbdd2d615961e7966b22  usr/lib/shim/shimaa64.efi.signed.latest
+10a5fedc9c6d905ccf541840ff1f52a3  usr/lib/shim/shimaa64.efi.signed.previous
+6a9148a53b93cfc1640fb5ff67771c9e  usr/sbin/update-secureboot-policy
+a127b8be11fa8f115b3f7f4ce2103316  usr/share/apport/package-hooks/source_shim-signed.py
+2d9ffcd8328762fc53d269d359d54af3  usr/share/doc/shim-signed/changelog.Debian.gz
+2d9ffcd8328762fc53d269d359d54af3  usr/share/doc/shim-signed/changelog.gz
+b5de19f59f1377fb968d1dcd3ea25426  usr/share/doc/shim-signed/copyright
+ab01ae221a0af71d878f0909f1317f0f  usr/share/lintian/overrides/shim-signed

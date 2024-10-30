@@ -1,0 +1,14 @@
+           CPU0       CPU1       CPU2       CPU3       CPU4       CPU5       CPU6       CPU7       
+ 11:      13788      15226      13068      15449      22144      14427      12460      11053     GICv3  27 Level     arch_timer
+ 14:       7369       2678       1911       1516       1158        959        936        610     GICv3  37 Level     virtio0
+ 15:      31081      17321      10871       7751       4471       3912       3179       2250     GICv3  34 Level     vmwgfx, enp0s8
+ 16:        370        151        151         81         97         64        176         15     GICv3  36 Level     xhci-hcd:usb1, snd_hda_intel:card0
+ 17:          0          0          0          0          0          0          0          0 141011000.pl061   3 Edge      GPIO Key Poweroff
+ 18:          0          0          0          0          0          0          0          0 141011000.pl061   4 Edge      GPIO Key Suspend
+IPI0:       456        448        466        430        369        427        355        452       Rescheduling interrupts
+IPI1:     29761      21666      13237      13264       7722      25325      15677      10944       Function call interrupts
+IPI2:         0          0          0          0          0          0          0          0       CPU stop interrupts
+IPI3:         0          0          0          0          0          0          0          0       CPU stop (for crash dump) interrupts
+IPI4:         0          0          0          0          0          0          0          0       Timer broadcast interrupts
+IPI5:         0          0          0          2          0        142          5          0       IRQ work interrupts
+Err:          0

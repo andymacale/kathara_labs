@@ -1,0 +1,17 @@
+Package: kathara
+Priority: optional
+Section: misc
+Installed-Size: 141871
+Maintainer: Kathara Team <contact@kathara.org>
+Architecture: arm64
+Version: 3.7.7-1noble
+Suggests: docker.io (>= 17.03.2) | docker-ce (>= 17.03.2), xterm
+Depends: libbz2-1.0, libc6 (>= 2.38), libexpat1 (>= 2.6.0), libtinfo6 (>= 6), zlib1g (>= 1:1.2.0)
+Filename: pool/main/k/kathara/kathara_3.7.7-1noble_arm64.deb
+Size: 27224934
+MD5sum: 2c06333d6638c7bf6a513119fac7b515
+SHA1: 8c37f5baa3422d0b9c1de9e5788b6ffe70e3928e
+SHA256: 08c71075a07f36d2e44ad147149fd40ffebe38145a3044a9f8f85ad54be3e152
+Description: A lightweight container-based network emulation tool.
+Description-md5: 0c76a247ce30c0d5c2ee35d1b9f442fa
+

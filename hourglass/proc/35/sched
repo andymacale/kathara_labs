@@ -1,0 +1,30 @@
+migration/3 (35, #threads: 1)
+-------------------------------------------------------------------
+se.exec_start                                :       1336052.434902
+se.vruntime                                  :             0.986472
+se.sum_exec_runtime                          :            25.218460
+se.nr_migrations                             :                    1
+nr_switches                                  :                  344
+nr_voluntary_switches                        :                  344
+nr_involuntary_switches                      :                    0
+se.load.weight                               :              1048576
+se.avg.load_sum                              :                46921
+se.avg.runnable_sum                          :                95886
+se.avg.util_sum                              :                95886
+se.avg.load_avg                              :                 1024
+se.avg.runnable_avg                          :                    2
+se.avg.util_avg                              :                    2
+se.avg.last_update_time                      :                    0
+se.avg.util_est                              :                    2
+uclamp.min                                   :                 1024
+uclamp.max                                   :                 1024
+effective uclamp.min                         :                 1024
+effective uclamp.max                         :                 1024
+policy                                       :                    1
+prio                                         :                    0
+clock-delta                                  :                    0
+numa_pages_migrated                          :                    0
+numa_preferred_nid                           :                   -1
+total_numa_faults                            :                    0
+current_node=0, numa_group_id=0
+numa_faults node=0 task_private=0 task_shared=0 group_private=0 group_shared=0

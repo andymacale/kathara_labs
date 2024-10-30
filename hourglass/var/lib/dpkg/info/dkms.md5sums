@@ -1,0 +1,11 @@
+f9e54f9157b587d2ae3eae1a991fa4e8  usr/lib/dkms/common.postinst
+25864cd2227f7a08c58cb76a690a7045  usr/lib/dkms/dkms-autopkgtest
+5645e5b6624074fd81476abf3e0a2d8b  usr/lib/dkms/dkms_autoinstaller
+aeb8fd83f56cb8a6a7680c754a0e4ffa  usr/sbin/dkms
+fa87abc20eaf4d0780071f7c5d3eac3e  usr/share/apport/package-hooks/dkms_packages.py
+64dea01f3f99d90751e70a77ba15530e  usr/share/bash-completion/completions/dkms
+126b7292c1a4997fc7cdca1884ffff21  usr/share/doc/dkms/HOWTO.Debian
+14753b1cf8b8aa8857134da340e6c3c3  usr/share/doc/dkms/changelog.Debian.gz
+642a6ae385183b3f4443f06434616d0f  usr/share/doc/dkms/copyright
+fbe931adf37f7bc7e9210a8d1efb7001  usr/share/lintian/overrides/dkms
+8918633550da45eff86ff84f6984105b  usr/share/man/man8/dkms.8.gz

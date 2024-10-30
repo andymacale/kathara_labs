@@ -1,0 +1,6 @@
+/etc/dkms/framework.conf
+/etc/kernel/header_postinst.d/dkms
+/etc/kernel/install.d/dkms
+/etc/kernel/postinst.d/dkms
+/etc/kernel/prerm.d/dkms
+/etc/modprobe.d/dkms.conf

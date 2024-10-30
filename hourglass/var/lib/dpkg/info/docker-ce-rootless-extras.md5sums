@@ -1,0 +1,5 @@
+73294e68c860627f9bfdc413cbaf0048  usr/bin/dockerd-rootless-setuptool.sh
+695295df4a95edde0f1ac20286755318  usr/bin/dockerd-rootless.sh
+575a692d3c59dba72d998ffc954c73bf  usr/bin/rootlesskit
+e6bb613393a665e1c37ca7b200556d1d  usr/bin/rootlesskit-docker-proxy
+cc08c5cb5eb89370cc1fdea6aa90a67a  usr/share/doc/docker-ce-rootless-extras/changelog.Debian.gz

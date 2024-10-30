@@ -1,0 +1,258 @@
+Codec: SigmaTel STAC9221 A1
+Address: 0
+AFG Function Id: 0x1 (unsol 1)
+Vendor Id: 0x83847680
+Subsystem Id: 0x83847680
+Revision Id: 0x103401
+No Modem Function Group found
+Default PCM:
+    rates [0x2c]: 16000 22050 44100
+    bits [0x2]: 16
+    formats [0x1]: PCM
+Default Amp-In caps: ofs=0x7f, nsteps=0x7f, stepsize=0x02, mute=1
+Default Amp-Out caps: ofs=0x7f, nsteps=0x7f, stepsize=0x02, mute=1
+State of AFG node 0x01:
+  Power states:  D0 D1 D2 D3
+  Power: setting=D0, actual=D0
+GPIO: io=4, o=0, i=0, unsolicited=1, wake=1
+  IO[0]: enable=0, dir=0, wake=0, sticky=0, data=0, unsol=0
+  IO[1]: enable=0, dir=0, wake=0, sticky=0, data=0, unsol=0
+  IO[2]: enable=0, dir=0, wake=0, sticky=0, data=0, unsol=0
+  IO[3]: enable=0, dir=0, wake=0, sticky=0, data=0, unsol=0
+Node 0x02 [Audio Output] wcaps 0xd0c05: Stereo Amp-Out R/L
+  Control: name="Headphone Playback Volume", index=0, device=0
+    ControlAmp: chs=3, dir=Out, idx=0, ofs=0
+  Control: name="Headphone Playback Switch", index=0, device=0
+    ControlAmp: chs=3, dir=Out, idx=0, ofs=0
+  Amp-Out caps: N/A
+  Amp-Out vals:  [0x80 0x80]
+  Converter: stream=0, channel=0
+  Power states: 
+  Power: setting=D0, actual=D0
+  Delay: 13 samples
+Node 0x03 [Audio Output] wcaps 0xd0c05: Stereo Amp-Out R/L
+  Control: name="Front Playback Volume", index=0, device=0
+    ControlAmp: chs=3, dir=Out, idx=0, ofs=0
+  Control: name="Front Playback Switch", index=0, device=0
+    ControlAmp: chs=3, dir=Out, idx=0, ofs=0
+  Device: name="STAC9221 A1 Analog", type="Audio", device=0
+  Amp-Out caps: N/A
+  Amp-Out vals:  [0x80 0x80]
+  Converter: stream=0, channel=0
+  Power states: 
+  Power: setting=D0, actual=D0
+  Delay: 13 samples
+Node 0x04 [Audio Output] wcaps 0xd0c05: Stereo Amp-Out R/L
+  Control: name="Center Playback Volume", index=0, device=0
+    ControlAmp: chs=1, dir=Out, idx=0, ofs=0
+  Control: name="LFE Playback Volume", index=0, device=0
+    ControlAmp: chs=2, dir=Out, idx=0, ofs=0
+  Control: name="Center Playback Switch", index=0, device=0
+    ControlAmp: chs=1, dir=Out, idx=0, ofs=0
+  Control: name="LFE Playback Switch", index=0, device=0
+    ControlAmp: chs=2, dir=Out, idx=0, ofs=0
+  Amp-Out caps: N/A
+  Amp-Out vals:  [0x80 0x80]
+  Converter: stream=0, channel=0
+  Power states: 
+  Power: setting=D0, actual=D0
+  Delay: 13 samples
+Node 0x05 [Audio Output] wcaps 0xd0c05: Stereo Amp-Out R/L
+  Amp-Out caps: N/A
+  Amp-Out vals:  [0x7f 0x7f]
+  Converter: stream=0, channel=0
+  Power states: 
+  Power: setting=D0, actual=D0
+  Delay: 13 samples
+Node 0x06 [Audio Input] wcaps 0x1d0541: Stereo
+  Device: name="STAC9221 A1 Analog", type="Audio", device=0
+  Converter: stream=0, channel=0
+  SDI-Select: 0
+  Power states: 
+  Power: setting=D0, actual=D0
+  Delay: 13 samples
+  Connection: 1
+     0x17
+  Processing caps: benign=0, ncoeff=0
+Node 0x07 [Audio Input] wcaps 0x1d0541: Stereo
+  Device: name="STAC9221 A1 Alt Analog", type="Audio", device=2
+  Converter: stream=0, channel=0
+  SDI-Select: 0
+  Power states: 
+  Power: setting=D0, actual=D0
+  Delay: 13 samples
+  Connection: 1
+     0x18
+  Processing caps: benign=0, ncoeff=0
+Node 0x08 [Audio Output] wcaps 0x40211: Stereo Digital
+  Control: name="IEC958 Playback Con Mask", index=0, device=0
+  Control: name="IEC958 Playback Pro Mask", index=0, device=0
+  Control: name="IEC958 Playback Default", index=0, device=0
+  Control: name="IEC958 Playback Switch", index=0, device=0
+  Control: name="IEC958 Default PCM Playback Switch", index=0, device=0
+  Device: name="STAC9221 A1 Digital", type="SPDIF", device=1
+  Converter: stream=0, channel=0
+  Digital:
+  Digital category: 0x0
+  IEC Coding Type: 0x0
+  PCM:
+    rates [0x2c]: 16000 22050 44100
+    bits [0x2]: 16
+    formats [0x1]: PCM
+  Delay: 4 samples
+Node 0x09 [Audio Input] wcaps 0x140311: Stereo Digital
+  Control: name="IEC958 Capture Switch", index=0, device=0
+  Control: name="IEC958 Capture Default", index=0, device=0
+  Device: name="STAC9221 A1 Digital", type="SPDIF", device=1
+  Converter: stream=0, channel=0
+  SDI-Select: 0
+  Digital:
+  Digital category: 0x0
+  IEC Coding Type: 0x0
+  PCM:
+    rates [0x2c]: 16000 22050 44100
+    bits [0x2]: 16
+    formats [0x1]: PCM
+  Delay: 4 samples
+  Connection: 1
+     0x11
+Node 0x0a [Pin Complex] wcaps 0x400181: Stereo
+  Pincap 0x0000173e: IN OUT HP Detect Trigger
+    Vref caps: HIZ 50 GRD 80
+  Pin Default 0x02214020: [Jack] HP Out at Ext Front
+    Conn = 1/8, Color = Green
+    DefAssociation = 0x2, Sequence = 0x0
+  Pin-ctls: 0xc0: OUT HP VREF_HIZ
+  Unsolicited: tag=01, enabled=1
+  Connection: 1
+     0x02
+Node 0x0b [Pin Complex] wcaps 0x400181: Stereo
+  Pincap 0x00001736: IN OUT Detect Trigger
+    Vref caps: HIZ 50 GRD 80
+  Pin Default 0x01111011: [Jack] Speaker at Ext Rear
+    Conn = 1/8, Color = Black
+    DefAssociation = 0x1, Sequence = 0x1
+  Pin-ctls: 0x40: OUT VREF_HIZ
+  Unsolicited: tag=07, enabled=1
+  Connection: 1
+     0x04
+Node 0x0c [Pin Complex] wcaps 0x400181: Stereo
+  Pincap 0x00001736: IN OUT Detect Trigger
+    Vref caps: HIZ 50 GRD 80
+  Pin Default 0x01114010: [Jack] Speaker at Ext Rear
+    Conn = 1/8, Color = Green
+    DefAssociation = 0x1, Sequence = 0x0
+  Pin-ctls: 0x40: OUT VREF_HIZ
+  Unsolicited: tag=05, enabled=1
+  Connection: 1
+     0x03
+Node 0x0d [Pin Complex] wcaps 0x400181: Stereo
+  Pincap 0x0000173e: IN OUT HP Detect Trigger
+    Vref caps: HIZ 50 GRD 80
+  Pin Default 0x02a190f0: [Jack] Mic at Ext Front
+    Conn = 1/8, Color = Pink
+    DefAssociation = 0xf, Sequence = 0x0
+  Pin-ctls: 0x24: IN VREF_80
+  Unsolicited: tag=02, enabled=1
+  Connection: 1
+     0x02
+Node 0x0e [Pin Complex] wcaps 0x400081: Stereo
+  Pincap 0x00000024: IN Detect
+  Pin Default 0x01813051: [Jack] Line In at Ext Rear
+    Conn = 1/8, Color = Blue
+    DefAssociation = 0x5, Sequence = 0x1
+  Pin-ctls: 0x20: IN
+  Unsolicited: tag=03, enabled=1
+Node 0x0f [Pin Complex] wcaps 0x400185: Stereo Amp-Out
+  Control: name="Surround Playback Volume", index=0, device=0
+    ControlAmp: chs=3, dir=Out, idx=0, ofs=0
+  Control: name="Surround Playback Switch", index=0, device=0
+    ControlAmp: chs=3, dir=Out, idx=0, ofs=0
+  Amp-Out caps: N/A
+  Amp-Out vals:  [0x80 0x80]
+  Pincap 0x00000030: IN OUT
+  Pin Default 0x00116012: [Jack] Speaker at Ext N/A
+    Conn = 1/8, Color = Orange
+    DefAssociation = 0x1, Sequence = 0x2
+  Pin-ctls: 0x40: OUT
+  Unsolicited: tag=00, enabled=0
+  Connection: 1
+     0x05
+Node 0x10 [Pin Complex] wcaps 0x400301: Stereo Digital
+  Pincap 0x00000010: OUT
+  Pin Default 0x01481030: [Jack] SPDIF Out at Ext Rear
+    Conn = DIN, Color = Black
+    DefAssociation = 0x3, Sequence = 0x0
+  Pin-ctls: 0x40: OUT
+  Connection: 3
+     0x08* 0x17 0x19
+Node 0x11 [Pin Complex] wcaps 0x430681: Stereo Digital
+  Pincap 0x00010024: IN EAPD Detect
+  EAPD 0x0:
+  Pin Default 0x01c61060: [Jack] SPDIF In at Ext Rear
+    Conn = Digital, Color = Black
+    DefAssociation = 0x6, Sequence = 0x0
+  Pin-ctls: 0x20: IN
+  Unsolicited: tag=09, enabled=1
+  Power states: 
+  Power: setting=D0, actual=D0
+  Delay: 3 samples
+Node 0x12 [Audio Selector] wcaps 0x30010d: Stereo Amp-Out
+  Control: name="Mic Boost Volume", index=0, device=0
+    ControlAmp: chs=3, dir=Out, idx=0, ofs=0
+  Amp-Out caps: N/A
+  Amp-Out vals:  [0x00 0x00]
+  Connection: 7
+     0x0e 0x15 0x0f 0x0b 0x0c 0x0d* 0x0a
+Node 0x13 [Audio Selector] wcaps 0x30010d: Stereo Amp-Out
+  Amp-Out caps: N/A
+  Amp-Out vals:  [0x00 0x00]
+  Connection: 7
+     0x0e 0x15 0x0f 0x0b 0x0c 0x0d* 0x0a
+Node 0x14 [Beep Generator Widget] wcaps 0x70000c: Mono Amp-Out
+  Amp-Out caps: N/A
+  Amp-Out vals:  [0x00]
+Node 0x15 [Pin Complex] wcaps 0x400001: Stereo
+  Pincap 0x00000020: IN
+  Pin Default 0x80330052: [Fixed] CD at Ext N/A
+    Conn = ATAPI, Color = Unknown
+    DefAssociation = 0x5, Sequence = 0x2
+  Pin-ctls: 0x20: IN
+Node 0x16 [Volume Knob Widget] wcaps 0x600000: Mono
+  Volume-Knob: delta=0, steps=0, direct=1, val=127
+  Connection: 4
+     0x02 0x03 0x04 0x05
+Node 0x17 [Audio Selector] wcaps 0x300903: Stereo Amp-In R/L
+  Control: name="Capture Volume", index=0, device=0
+    ControlAmp: chs=3, dir=In, idx=0, ofs=0
+  Control: name="Capture Switch", index=0, device=0
+    ControlAmp: chs=3, dir=In, idx=0, ofs=0
+  Amp-In caps: N/A
+  Amp-In vals:  [0x80 0x80]
+  Connection: 1
+     0x12
+Node 0x18 [Audio Selector] wcaps 0x300903: Stereo Amp-In R/L
+  Control: name="Capture Volume", index=1, device=0
+    ControlAmp: chs=3, dir=In, idx=0, ofs=0
+  Control: name="Capture Switch", index=1, device=0
+    ControlAmp: chs=3, dir=In, idx=0, ofs=0
+  Amp-In caps: N/A
+  Amp-In vals:  [0x80 0x80]
+  Connection: 1
+     0x13
+Node 0x19 [Vendor Defined Widget] wcaps 0xf30201: Stereo Digital
+  Delay: 3 samples
+Node 0x1a [Audio Output] wcaps 0x30201: Stereo Digital
+  Converter: stream=0, channel=0
+  Digital:
+  Digital category: 0x0
+  IEC Coding Type: 0x0
+  Delay: 3 samples
+Node 0x1b [Pin Complex] wcaps 0x400301: Stereo Digital
+  Pincap 0x00000010: OUT
+  Pin Default 0x400000f0: [N/A] Line Out at Ext N/A
+    Conn = Unknown, Color = Unknown
+    DefAssociation = 0xf, Sequence = 0x0
+  Pin-ctls: 0x00:
+  Connection: 1
+     0x1a

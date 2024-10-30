@@ -1,0 +1,44 @@
+{
+  "Devices" : [
+    {
+      "DeviceId" : "866956cca2b4bff866d2d1227b6000619b9ba4b0",
+      "InstanceIds" : [
+        "GPIO\\ID_141011000.pl061"
+      ],
+      "Guid" : [
+        "f4abd7ec-54cf-5517-9403-5aeb76a1986e"
+      ],
+      "Plugin" : "gpio",
+      "Flags" : [
+        "registered"
+      ],
+      "Created" : 1730206903
+    },
+    {
+      "Name" : "HARDDISK",
+      "DeviceId" : "71f1ec3de28005c37b9c10e22e0416f958c24f01",
+      "InstanceIds" : [
+        "SCSI\\VEN_VBOX&DEV_HARDDISK",
+        "SCSI\\VEN_VBOX&DEV_HARDDISK&REV_1.0"
+      ],
+      "Guid" : [
+        "42a36feb-1c9d-5c5e-abbb-b1819db4b2e3",
+        "8856f7b1-9061-531a-bb0e-01cdadb9532d"
+      ],
+      "Summary" : "SCSI device",
+      "Plugin" : "scsi",
+      "Flags" : [
+        "internal",
+        "registered"
+      ],
+      "Vendor" : "VBOX",
+      "VendorId" : "SCSI:VBOX",
+      "Version" : "1.0",
+      "VersionFormat" : "plain",
+      "Icons" : [
+        "drive-harddisk"
+      ],
+      "Created" : 1730206903
+    }
+  ]
+}

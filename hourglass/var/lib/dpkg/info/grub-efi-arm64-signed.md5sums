@@ -1,0 +1,7 @@
+a58413018374730b6563b2a3ade1ff68  usr/lib/grub/arm64-efi-signed/gcdaa64.efi.signed
+e871ab0151792dc2b470ab33490f5223  usr/lib/grub/arm64-efi-signed/grubaa64.efi.signed
+76b285f78f080b3b617df9cef91c1dfd  usr/lib/grub/arm64-efi-signed/grubnetaa64.efi.signed
+ffc0e24a1adb4d12d37c7449b543bc6a  usr/lib/grub/arm64-efi-signed/version
+7af341f3092c3add966ffc0a4cc5860e  usr/share/doc/grub-efi-arm64-signed/changelog.Debian.gz
+7af341f3092c3add966ffc0a4cc5860e  usr/share/doc/grub-efi-arm64-signed/changelog.gz
+dddd2c1614f8064a9ee879e4f8359055  usr/share/doc/grub-efi-arm64-signed/copyright

@@ -1,0 +1,11 @@
+31f1eb764e3173d2223d0353ce18e5af  usr/lib/aarch64-linux-gnu/libbind9-9.18.28-0ubuntu0.24.04.1-Ubuntu.so
+63718eb3ab5ae19f9b50407d7a59c5d5  usr/lib/aarch64-linux-gnu/libdns-9.18.28-0ubuntu0.24.04.1-Ubuntu.so
+faca093ea52d5a3f7f6aae646597acf8  usr/lib/aarch64-linux-gnu/libirs-9.18.28-0ubuntu0.24.04.1-Ubuntu.so
+15d62cf22ea289412da11382bca70b6d  usr/lib/aarch64-linux-gnu/libisc-9.18.28-0ubuntu0.24.04.1-Ubuntu.so
+937fa250cd11843c2c0eefb1edcd8cb4  usr/lib/aarch64-linux-gnu/libisccc-9.18.28-0ubuntu0.24.04.1-Ubuntu.so
+b7d0ecf3bca5ec33edbb95fc02b338cf  usr/lib/aarch64-linux-gnu/libisccfg-9.18.28-0ubuntu0.24.04.1-Ubuntu.so
+19752f8af75b786d8f6605fefe4b10cb  usr/lib/aarch64-linux-gnu/libns-9.18.28-0ubuntu0.24.04.1-Ubuntu.so
+eb24bd55baf669a3ba0f8e33f79752f8  usr/share/doc/bind9-libs/NEWS.Debian.gz
+c6802cad9f652d4c93e3b6a0121b8a6c  usr/share/doc/bind9-libs/changelog.Debian.gz
+c4902d7f6fd40457f41ec8b26499e7a8  usr/share/doc/bind9-libs/copyright
+5a8db1f2385c80b7537a5614f81d6e26  usr/share/lintian/overrides/bind9-libs

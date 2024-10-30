@@ -1,4 +1,4 @@
-bgpd=yes
+bgpd=no
 ospfd=yes
 ospf6d=no
 ripd=no

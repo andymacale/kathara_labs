@@ -1,0 +1,41 @@
+{
+ "v1": {
+  "datasource": "DataSourceNone",
+  "init": {
+   "errors": [],
+   "finished": 1729422554.0908425,
+   "recoverable_errors": {
+    "DEPRECATED": [
+     "Deprecated cloud-config provided:\nusers.1.lock-passwd: Default: ``true`` Deprecated in version 22.3. Use ``lock_passwd`` instead."
+    ],
+    "WARNING": [
+     "Running ['netplan', 'apply'] resulted in stderr output: Failed to connect to system bus: No such file or directory\nFalling back to a hard restart of systemd-networkd.service\n"
+    ]
+   },
+   "start": 1729422552.6470683
+  },
+  "init-local": {
+   "errors": [],
+   "finished": 1729422550.7218196,
+   "recoverable_errors": {},
+   "start": 1729422550.323738
+  },
+  "modules-config": {
+   "errors": [],
+   "finished": 1729422555.5056114,
+   "recoverable_errors": {},
+   "start": 1729422554.379874
+  },
+  "modules-final": {
+   "errors": [],
+   "finished": 1729422566.1706383,
+   "recoverable_errors": {
+    "WARNING": [
+     "Used fallback datasource"
+    ]
+   },
+   "start": 1729422566.0939362
+  },
+  "stage": null
+ }
+}

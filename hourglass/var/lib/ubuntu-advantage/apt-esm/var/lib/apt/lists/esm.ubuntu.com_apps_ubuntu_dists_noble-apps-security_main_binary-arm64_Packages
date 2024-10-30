@@ -1,0 +1,1723 @@
+Package: dcmtk
+Priority: optional
+Section: science
+Installed-Size: 5226
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: arm64
+Version: 3.6.7-9.1ubuntu0.1~esm1
+Depends: adduser, libc6 (>= 2.38), libdcmtk17t64 (>= 3.6.7), libgcc-s1 (>= 3.3.1), libstdc++6 (>= 13.1), libxml2 (>= 2.7.4), zlib1g (>= 1:1.1.4)
+Filename: pool/main/d/dcmtk/dcmtk_3.6.7-9.1ubuntu0.1~esm1_arm64.deb
+Size: 851398
+SHA256: d7021f57cae0c9a05ff83c32c7cb5989b2b4eb7134b39eb6395dbbca692de9e3
+SHA1: f537c4bc15879e1cb4942f9d622d21b8fb64c0b1
+MD5sum: 0b584e84f9a26b2c1f4eac2bba45ba39
+Description: OFFIS DICOM toolkit command line utilities
+ DCMTK includes a collection of libraries and applications for examining,
+ constructing and converting DICOM image files, handling offline media,
+ sending and receiving images over a network connection, as well as
+ demonstrative image storage and worklist servers.
+ .
+ This package contains the DCMTK utility applications.
+ .
+ Note: This version was compiled with libssl support.
+Original-Maintainer: Debian Med Packaging Team <debian-med-packaging@lists.alioth.debian.org>
+
+Package: dcmtk-doc
+Source: dcmtk
+Priority: optional
+Section: doc
+Installed-Size: 156760
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 3.6.7-9.1ubuntu0.1~esm1
+Suggests: dcmtk, libdcmtk-dev
+Depends: libjs-jquery
+Filename: pool/main/d/dcmtk/dcmtk-doc_3.6.7-9.1ubuntu0.1~esm1_all.deb
+Size: 8030066
+SHA256: a16098986c1ecf9ea622ffbf8755c7b1928afba9e962d26cb6f93878931d86ae
+SHA1: 3681022e22a3769cac069702533907b19c0c14b2
+MD5sum: 6b33da970c9f85787c7daf619dd71524
+Description: OFFIS DICOM toolkit documentation
+ DCMTK includes a collection of libraries and applications for examining,
+ constructing and converting DICOM image files, handling offline media,
+ sending and receiving images over a network connection, as well as
+ demonstrative image storage and worklist servers.
+ .
+ This package contains the on-line documentation for the DCMTK libraries
+ and utilities in HTML format.
+Multi-Arch: foreign
+Original-Maintainer: Debian Med Packaging Team <debian-med-packaging@lists.alioth.debian.org>
+
+Package: emacs
+Priority: optional
+Section: editors
+Installed-Size: 54
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 1:29.3+1-1ubuntu2+esm1
+Depends: emacs-gtk (>= 1:27.1) | emacs-pgtk (>= 1:27.1) | emacs-lucid (>= 1:27.1) | emacs-nox (>= 1:27.1)
+Filename: pool/main/e/emacs/emacs_29.3+1-1ubuntu2+esm1_all.deb
+Size: 20096
+SHA256: 3bb6e830734118c414a94e88d749a7c2d072ef25d6e17d664aa46dc3f4e5d067
+SHA1: b8940511b01b09312327ae2a81536b8126c141b5
+MD5sum: 51307351c650a907edfdfaadded74188
+Description: GNU Emacs editor (metapackage)
+ GNU Emacs is the extensible self-documenting text editor.
+ This is a metapackage that will always depend on the latest
+ recommended Emacs variant (currently emacs-gtk).
+Original-Maintainer: Rob Browning <rlb@defaultvalue.org>
+
+Package: emacs-bin-common
+Source: emacs
+Priority: optional
+Section: editors
+Installed-Size: 491
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: arm64
+Version: 1:29.3+1-1ubuntu2+esm1
+Recommends: mailutils
+Depends: emacs-common (= 1:29.3+1-1ubuntu2+esm1), libc6 (>= 2.38)
+Breaks: emacs-gtk (<< 1:29.2), emacs-lucid (<< 1:29.2), emacs-nox (<< 1:29.2), emacs-pgtk (<< 1:29.2)
+Filename: pool/main/e/emacs/emacs-bin-common_29.3+1-1ubuntu2+esm1_arm64.deb
+Size: 102836
+SHA256: f39f7e0c2208c285006415ab0e1a43aafdd0bd09a6d441fc5a146d31b4a64ec2
+SHA1: d2c618f941fb75ddcc2dd27e8e37a8af307be458
+MD5sum: e51262c7bd3e762ff41d3a3d0b45015c
+Description: GNU Emacs editor's shared, architecture dependent files
+ GNU Emacs is the extensible self-documenting text editor.
+ This package contains the architecture dependent infrastructure
+ that's shared by emacs-gtk, emacs-pgtk, emacs-lucid, and emacs-nox.
+Original-Maintainer: Rob Browning <rlb@defaultvalue.org>
+
+Package: emacs-common
+Source: emacs
+Priority: optional
+Section: editors
+Installed-Size: 78151
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 1:29.3+1-1ubuntu2+esm1
+Replaces: emacs-bin-common (<< 1:28)
+Suggests: emacs-common-non-dfsg, ncurses-term
+Depends: emacs-el, emacsen-common (>= 3.0.0), install-info, dconf-gsettings-backend | gsettings-backend, init-system-helpers (>= 1.52)
+Conflicts: cedet, eieio, emacs-el (<< 1:29.3+1-1ubuntu2+esm1), gnus-bonus-el, speedbar
+Breaks: apel (<< 10.8+0.20120427-4), edb (<< 1.32), egg (<< 4.2.0-2), elpa-cider (<< 0.19.0+dfsg-4~), emacs (<< 1:25), emacs-bin-common (<< 1:28), emacs-gtk (<< 1:25), emacs-lucid (<< 1:25), emacs-nox (<< 1:25)
+Filename: pool/main/e/emacs/emacs-common_29.3+1-1ubuntu2+esm1_all.deb
+Size: 16130324
+SHA256: 2ec90773470d4783bb7a07b6219659bed23bb4c812467ca8b4ae22d0dba69cab
+SHA1: 4f57bc61ba8e0aebecf03e226425f31af9307847
+MD5sum: 228fadad4f2edbc248eaabcac84428f1
+Description: GNU Emacs editor's shared, architecture independent infrastructure
+ GNU Emacs is the extensible self-documenting text editor.
+ This package contains the architecture independent infrastructure
+ that's shared by emacs-gtk, emacs-pgtk, emacs-lucid, and emacs-nox.
+Original-Maintainer: Rob Browning <rlb@defaultvalue.org>
+
+Package: emacs-el
+Source: emacs
+Priority: optional
+Section: editors
+Installed-Size: 19048
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 1:29.3+1-1ubuntu2+esm1
+Depends: emacs-common (= 1:29.3+1-1ubuntu2+esm1)
+Filename: pool/main/e/emacs/emacs-el_29.3+1-1ubuntu2+esm1_all.deb
+Size: 18662976
+SHA256: 8187d970eade514f3db222bf55cde9af505221c59b0b5228e96ba075ed12328b
+SHA1: 6dde7fed0ace7c11a03269c9506d4b8353a39ba1
+MD5sum: c83cb7fc4622dd93afc8f30e64b30df2
+Description: GNU Emacs LISP (.el) files
+ GNU Emacs is the extensible self-documenting text editor.
+ This package contains the elisp sources for the convenience of users,
+ saving space in the main package for small systems.
+Original-Maintainer: Rob Browning <rlb@defaultvalue.org>
+
+Package: emacs-gtk
+Source: emacs
+Priority: optional
+Section: editors
+Installed-Size: 46847
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: arm64
+Version: 1:29.3+1-1ubuntu2+esm1
+Recommends: fonts-noto-color-emoji
+Replaces: emacs-bin-common (<< 1:29.2), emacs-lucid, emacs-nox, emacs-pgtk
+Suggests: emacs-common-non-dfsg
+Provides: editor, emacs, emacsen, info-browser, mail-reader, news-reader
+Depends: emacs-bin-common (= 1:29.3+1-1ubuntu2+esm1), emacs-common (= 1:29.3+1-1ubuntu2+esm1), libacl1 (>= 2.2.23), libasound2t64 (>= 1.0.16), libc6 (>= 2.38), libcairo2 (>= 1.7.2), libdbus-1-3 (>= 1.9.14), libfontconfig1 (>= 2.12.6), libfreetype6 (>= 2.2.1), libgccjit0 (>= 12), libgdk-pixbuf-2.0-0 (>= 2.22.0), libgif7 (>= 5.1), libglib2.0-0t64 (>= 2.79.0), libgmp10 (>= 2:6.3.0+dfsg), libgnutls30t64 (>= 3.8.2), libgpm2 (>= 1.20.7), libgtk-3-0t64 (>= 3.21.4), libharfbuzz0b (>= 0.9.42), libice6 (>= 1:1.0.0), libjansson4 (>= 2.14), libjpeg8 (>= 8c), liblcms2-2 (>= 2.2+git20110628), libm17n-0 (>= 1.6.1), libotf1 (>= 0.9.16), libpango-1.0-0 (>= 1.18.0), libpng16-16t64 (>= 1.6.2), librsvg2-2 (>= 2.52.5), libselinux1 (>= 3.1~), libsm6, libsqlite3-0 (>= 3.7.15), libsystemd0, libtiff6 (>= 4.0.3), libtinfo6 (>= 6), libtree-sitter0 (>= 0.20.2), libwebpdecoder3 (>= 1.3.2), libwebpdemux2 (>= 1.3.2), libx11-6 (>= 2:1.2.99.901), libxcomposite1 (>= 1:0.4.5), libxext6, libxfixes3 (>= 1:4.0.1), libxi6 (>= 2:1.5.99.2), libxinerama1 (>= 2:1.1.4), libxml2 (>= 2.7.4), libxrandr2, libxrender1, zlib1g (>= 1:1.1.4)
+Conflicts: emacs-lucid, emacs-nox, emacs-pgtk
+Breaks: emacs-bin-common (<< 1:29.2)
+Filename: pool/main/e/emacs/emacs-gtk_29.3+1-1ubuntu2+esm1_arm64.deb
+Size: 8167388
+SHA256: 1f993de40d437b57e4acafc57f3f10a1c87f816726fadd353b98d2424a103cea
+SHA1: 7187667bd5003c1dbba2e033409bfd62e1ae00f5
+MD5sum: b275d43b8d601d53671affdd095162ce
+Description: GNU Emacs editor (with GTK+ GUI support)
+ GNU Emacs is the extensible self-documenting text editor.  This
+ package contains a version of Emacs with a graphical user interface
+ based on GTK+ for X11 and Wayland (instead of the Lucid toolkit
+ provided by the emacs-lucid package).
+ .
+ If you are using Wayland, you may wish to install emacs-pgtk instead.
+Original-Maintainer: Rob Browning <rlb@defaultvalue.org>
+
+Package: emacs-lucid
+Source: emacs
+Priority: optional
+Section: editors
+Installed-Size: 47675
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: arm64
+Version: 1:29.3+1-1ubuntu2+esm1
+Recommends: fonts-noto-color-emoji
+Replaces: emacs-bin-common (<< 1:29.2), emacs-gtk, emacs-nox, emacs-pgtk
+Suggests: emacs-common-non-dfsg
+Provides: editor, emacs, emacsen, info-browser, mail-reader, news-reader
+Depends: emacs-bin-common (= 1:29.3+1-1ubuntu2+esm1), emacs-common (= 1:29.3+1-1ubuntu2+esm1), libacl1 (>= 2.2.23), libasound2t64 (>= 1.0.16), libc6 (>= 2.38), libcairo2 (>= 1.7.2), libdbus-1-3 (>= 1.9.14), libfontconfig1 (>= 2.12.6), libfreetype6 (>= 2.2.1), libgccjit0 (>= 12), libgdk-pixbuf-2.0-0 (>= 2.22.0), libgif7 (>= 5.1), libglib2.0-0t64 (>= 2.16.0), libgmp10 (>= 2:6.3.0+dfsg), libgnutls30t64 (>= 3.8.2), libgpm2 (>= 1.20.7), libharfbuzz0b (>= 0.9.42), libice6 (>= 1:1.0.0), libjansson4 (>= 2.14), libjpeg8 (>= 8c), liblcms2-2 (>= 2.2+git20110628), libm17n-0 (>= 1.6.1), libotf1 (>= 0.9.16), libpng16-16t64 (>= 1.6.2), librsvg2-2 (>= 2.52.5), libselinux1 (>= 3.1~), libsm6, libsqlite3-0 (>= 3.7.15), libsystemd0, libtiff6 (>= 4.0.3), libtinfo6 (>= 6), libtree-sitter0 (>= 0.20.2), libwebpdecoder3 (>= 1.3.2), libwebpdemux2 (>= 1.3.2), libx11-6 (>= 2:1.2.99.901), libxcomposite1 (>= 1:0.4.5), libxext6 (>= 2:1.3.0), libxfixes3 (>= 1:4.0.1), libxi6 (>= 2:1.5.99.2), libxinerama1 (>= 2:1.1.4), libxml2 (>= 2.7.4), libxmu6 (>= 2:1.1.3), libxpm4, libxrandr2 (>= 2:1.5.0), libxrender1, libxt6t64, xaw3dg (>= 1.5+E-1), zlib1g (>= 1:1.1.4)
+Conflicts: emacs-gtk, emacs-nox, emacs-pgtk
+Breaks: emacs-bin-common (<< 1:29.2)
+Filename: pool/main/e/emacs/emacs-lucid_29.3+1-1ubuntu2+esm1_arm64.deb
+Size: 8133740
+SHA256: f871e20f56bb98b4c36d8ca8e342c6a91bc8bae8cd01cace6767f057a70191f4
+SHA1: d6c439871a69a2af777852e4dba9c4f290e0d2a2
+MD5sum: 2e2098eb3472f876e8a9d4fb3730339d
+Description: GNU Emacs editor (with Lucid GUI support)
+ GNU Emacs is the extensible self-documenting text editor.  This
+ package contains a version of Emacs with support for a graphical user
+ interface based on the Lucid toolkit (instead of the GTK+ interface
+ provided by the emacs-gtk package).  Until some known GTK+
+ problems are fixed, this version may help avoid crashing Emacs during
+ an emacsclient disconnect.  See
+ https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=567934 and
+ https://bugzilla.gnome.org/show_bug.cgi?id=85715 for more
+ information.
+Original-Maintainer: Rob Browning <rlb@defaultvalue.org>
+
+Package: emacs-nox
+Source: emacs
+Priority: optional
+Section: editors
+Installed-Size: 44742
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: arm64
+Version: 1:29.3+1-1ubuntu2+esm1
+Replaces: emacs-bin-common (<< 1:29.2), emacs-gtk, emacs-lucid, emacs-pgtk
+Suggests: emacs-common-non-dfsg
+Provides: editor, emacs, emacsen, info-browser, mail-reader, news-reader
+Depends: emacs-bin-common (= 1:29.3+1-1ubuntu2+esm1), emacs-common (= 1:29.3+1-1ubuntu2+esm1), libacl1 (>= 2.2.23), libasound2t64 (>= 1.0.16), libc6 (>= 2.38), libdbus-1-3 (>= 1.9.14), libgccjit0 (>= 12), libgmp10 (>= 2:6.3.0+dfsg), libgnutls30t64 (>= 3.8.2), libgpm2 (>= 1.20.7), libjansson4 (>= 2.14), liblcms2-2 (>= 2.2+git20110628), libselinux1 (>= 3.1~), libsqlite3-0 (>= 3.7.15), libsystemd0, libtinfo6 (>= 6), libtree-sitter0 (>= 0.20.2), libxml2 (>= 2.7.4), zlib1g (>= 1:1.1.4)
+Conflicts: emacs-gtk, emacs-lucid, emacs-pgtk
+Breaks: emacs-bin-common (<< 1:29.2)
+Filename: pool/main/e/emacs/emacs-nox_29.3+1-1ubuntu2+esm1_arm64.deb
+Size: 7610094
+SHA256: 5b62f4cb3574d980ff4bd57d9f3faaca127d54b7fc33ac06ced60f5a0bcae988
+SHA1: a6bc64c4c71e4f24f18d12b9db8964ad2996ce55
+MD5sum: ba1533c26efa436dc345e0070366e59f
+Description: GNU Emacs editor (without GUI support)
+ GNU Emacs is the extensible self-documenting text editor.  This
+ package contains a version of Emacs compiled without support for X,
+ and provides only a text terminal interface.
+Original-Maintainer: Rob Browning <rlb@defaultvalue.org>
+
+Package: emacs-pgtk
+Source: emacs
+Priority: optional
+Section: editors
+Installed-Size: 46930
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: arm64
+Version: 1:29.3+1-1ubuntu2+esm1
+Recommends: fonts-noto-color-emoji
+Replaces: emacs-bin-common (<< 1:29.2), emacs-gtk, emacs-lucid, emacs-nox
+Suggests: emacs-common-non-dfsg
+Provides: editor, emacs, emacsen, info-browser, mail-reader, news-reader
+Depends: emacs-bin-common (= 1:29.3+1-1ubuntu2+esm1), emacs-common (= 1:29.3+1-1ubuntu2+esm1), libacl1 (>= 2.2.23), libasound2t64 (>= 1.0.16), libc6 (>= 2.38), libcairo2 (>= 1.12.0), libdbus-1-3 (>= 1.9.14), libfontconfig1 (>= 2.12.6), libfreetype6 (>= 2.2.1), libgccjit0 (>= 12), libgdk-pixbuf-2.0-0 (>= 2.22.0), libgif7 (>= 5.1), libglib2.0-0t64 (>= 2.79.0), libgmp10 (>= 2:6.3.0+dfsg), libgnutls30t64 (>= 3.8.2), libgpm2 (>= 1.20.7), libgtk-3-0t64 (>= 3.21.5), libharfbuzz0b (>= 0.9.42), libjansson4 (>= 2.14), libjpeg8 (>= 8c), liblcms2-2 (>= 2.2+git20110628), libotf1 (>= 0.9.10), libpango-1.0-0 (>= 1.18.0), libpng16-16t64 (>= 1.6.2), librsvg2-2 (>= 2.52.5), libselinux1 (>= 3.1~), libsqlite3-0 (>= 3.7.15), libsystemd0, libtiff6 (>= 4.0.3), libtinfo6 (>= 6), libtree-sitter0 (>= 0.20.2), libwebpdecoder3 (>= 1.3.2), libwebpdemux2 (>= 1.3.2), libxml2 (>= 2.7.4), zlib1g (>= 1:1.1.4)
+Conflicts: emacs-gtk, emacs-lucid, emacs-nox
+Breaks: emacs-bin-common (<< 1:29.2)
+Filename: pool/main/e/emacs/emacs-pgtk_29.3+1-1ubuntu2+esm1_arm64.deb
+Size: 7990108
+SHA256: aee581057b4ae936122802e930d4cfbb7bf61ff14ae2d912d339adaa63592439
+SHA1: 6cc288605c2d47ef4cf5e975f3555551af8b48bf
+MD5sum: 5f3801a708ff381677dea671a527292d
+Description: GNU Emacs editor (with GTK+ Wayland GUI support)
+ GNU Emacs is the extensible self-documenting text editor.  This
+ package contains a version of Emacs with a graphical user interface
+ based on GTK+ for Wayland.
+ .
+ If you are using exclusively X11, install emacs-gtk instead.  The
+ PGTK port works less well than the standard GTK+ build in a number of
+ respects.
+Original-Maintainer: Rob Browning <rlb@defaultvalue.org>
+
+Package: ffmpeg
+Priority: optional
+Section: video
+Installed-Size: 2565
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: arm64
+Version: 7:6.1.1-3ubuntu5+esm2
+Suggests: ffmpeg-doc
+Depends: libavcodec60 (>= 7:6.1), libavdevice60 (>= 7:6.0), libavfilter9 (>= 7:6.0), libavformat60 (>= 7:6.0), libavutil58 (>= 7:6.0), libc6 (>= 2.35), libpostproc57 (>= 7:6.0), libsdl2-2.0-0 (>= 2.0.12), libswresample4 (>= 7:6.0), libswscale7 (>= 7:6.0)
+Filename: pool/main/f/ffmpeg/ffmpeg_6.1.1-3ubuntu5+esm2_arm64.deb
+Size: 1880322
+SHA256: bd46113923040bb0f94807d9078bb1219ef885ff0c9a37ddf6b49c7ca158bdf2
+SHA1: 0c9f4cbf9917e845dd50fa3c34a888a6a929626c
+MD5sum: 4e400c87f6ec6bd7ba361676416523c4
+Description: Tools for transcoding, streaming and playing of multimedia files
+Description-md5: 9cc505cdfa97126cc9586d97f18c7cc0
+Multi-Arch: foreign
+Original-Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+
+Package: ffmpeg-doc
+Source: ffmpeg
+Priority: optional
+Section: doc
+Installed-Size: 36614
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 7:6.1.1-3ubuntu5+esm2
+Depends: libjs-jquery, libjs-bootstrap
+Filename: pool/main/f/ffmpeg/ffmpeg-doc_6.1.1-3ubuntu5+esm2_all.deb
+Size: 2105454
+SHA256: 2f2f8979ea7e6748677692f200e51564ab391f91068073796f1961bc83ef51ff
+SHA1: 9007469f0ece9fdb31574f27b17d258da3fd5918
+MD5sum: 5edc7826c25e71246df88680b8c2c890
+Description: Documentation of the FFmpeg multimedia framework
+ FFmpeg is the leading multimedia framework, able to decode, encode, transcode,
+ mux, demux, stream, filter and play pretty much anything that humans and
+ machines have created. It supports the most obscure ancient formats up to the
+ cutting edge.
+ .
+ This package contains the HTML documentation for the FFmpeg multimedia
+ framework including the API documentation created by doxygen and the manpages
+ for the libraries.
+Multi-Arch: foreign
+Original-Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+
+Package: hello
+Priority: optional
+Section: devel
+Installed-Size: 144
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: arm64
+Version: 2.10-3build1.1~esm1
+Replaces: hello-debhelper (<< 2.9), hello-traditional
+Depends: libc6 (>= 2.38)
+Conflicts: hello-traditional
+Breaks: hello-debhelper (<< 2.9)
+Filename: pool/main/h/hello/hello_2.10-3build1.1~esm1_arm64.deb
+Size: 25150
+SHA256: 5f1c4bb54946cbf8be9607717418b1713e52067e9083474cbd8c2d02f95c8072
+SHA1: 26d98f8561a83d3a3088a2f952dc9443965c0607
+MD5sum: 47bf59c8e3c245070e78897c5dccb06b
+Description: example package based on GNU hello
+ The GNU hello program produces a familiar, friendly greeting.  It
+ allows non-programmers to use a classic computer science tool which
+ would otherwise be unavailable to them.
+ .
+ Seriously, though: this is an example of how to do a Debian package.
+ It is the Debian version of the GNU Project's `hello world' program
+ (which is itself an example for the GNU Project).
+Original-Maintainer: Santiago Vila <sanvila@debian.org>
+
+Package: libavcodec-dev
+Source: ffmpeg
+Priority: optional
+Section: libdevel
+Installed-Size: 20662
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: arm64
+Version: 7:6.1.1-3ubuntu5+esm2
+Depends: libavcodec60 (= 7:6.1.1-3ubuntu5+esm2), libavutil-dev (= 7:6.1.1-3ubuntu5+esm2), libswresample-dev (= 7:6.1.1-3ubuntu5+esm2)
+Filename: pool/main/f/ffmpeg/libavcodec-dev_6.1.1-3ubuntu5+esm2_arm64.deb
+Size: 6458212
+SHA256: 524c34e1c65bcd9ed5d78a6cda356b82591e4a91fcdce7fc1557d073ac68150d
+SHA1: b0d3eb85456cf6d9e6f216349216171cb40e7e1c
+MD5sum: f07a8bc9a1486d98daac8bea8da03397
+Description: FFmpeg library with de/encoders for audio/video codecs - development files
+ FFmpeg is the leading multimedia framework, able to decode, encode, transcode,
+ mux, demux, stream, filter and play pretty much anything that humans and
+ machines have created. It supports the most obscure ancient formats up to the
+ cutting edge.
+ .
+ This library provides a generic encoding/decoding framework and
+ contains multiple decoders and encoders for audio, video and subtitle streams,
+ and several bitstream filters.
+ .
+ The shared architecture provides various services ranging from bit stream I/O
+ to DSP optimizations, and makes it suitable for implementing robust and fast
+ codecs as well as for experimentation.
+ .
+ This package contains the development files.
+Multi-Arch: same
+Original-Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+
+Package: libavcodec-extra
+Source: ffmpeg
+Priority: optional
+Section: metapackages
+Installed-Size: 58
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: arm64
+Version: 7:6.1.1-3ubuntu5+esm2
+Depends: libavcodec-extra60 (= 7:6.1.1-3ubuntu5+esm2)
+Filename: pool/main/f/ffmpeg/libavcodec-extra_6.1.1-3ubuntu5+esm2_arm64.deb
+Size: 15396
+SHA256: 4027ff072fd3127226d73d048346a5cff1dd80a3cfbbfab50944429e1fb6b83b
+SHA1: fd00c67fa57b94d031509eb8ff3bae1f57af569a
+MD5sum: 039b1e4e3b81870e3a3c97b5a680fd58
+Description: FFmpeg library with extra codecs (metapackage)
+ FFmpeg is the leading multimedia framework, able to decode, encode, transcode,
+ mux, demux, stream, filter and play pretty much anything that humans and
+ machines have created. It supports the most obscure ancient formats up to the
+ cutting edge.
+ .
+ This metapackage depends on the latest version of the libavcodec variant
+ that offers additional codec support. Application packages can depend
+ on it if they require or suggest this variant in a robust manner.
+Multi-Arch: same
+Original-Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+
+Package: libavcodec-extra60
+Source: ffmpeg
+Priority: optional
+Section: libs
+Installed-Size: 14161
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: arm64
+Version: 7:6.1.1-3ubuntu5+esm2
+Suggests: libcuda1, libnvcuvid1, libnvidia-encode1
+Provides: libavcodec60 (= 7:6.1.1-3ubuntu5+esm2)
+Depends: libaom3 (>= 3.2.0), libaribb24-0t64 (>= 1.0.3), libavutil58 (= 7:6.1.1-3ubuntu5+esm2), libc6 (>= 2.35), libcairo2 (>= 1.2.4), libcodec2-1.2 (>= 1.2.0), libdav1d7 (>= 1.1.0), libglib2.0-0t64 (>= 2.12.0), libgsm1 (>= 1.0.18), libjxl0.7 (>= 0.7.0), liblzma5 (>= 5.1.1alpha+20120614), libmp3lame0 (>= 3.100), libopencore-amrnb0 (>= 0.1.6), libopencore-amrwb0 (>= 0.1.6), libopenjp2-7 (>= 2.0.0), libopus0 (>= 1.1), librav1e0 (>= 0.5.1), librsvg2-2 (>= 2.52.5), libshine3 (>= 3.1.0), libsnappy1v5 (>= 1.1.10), libspeex1 (>= 1.2~), libsvtav1enc1d1 (>= 1.7.0+dfsg), libswresample4 (>= 7:6.0), libtheora0 (>= 1.0), libtwolame0 (>= 0.3.10), libva2 (>= 2.9.0), libvo-amrwbenc0 (>= 0.1.3), libvorbis0a (>= 1.1.2), libvorbisenc2 (>= 1.1.2), libvpx9 (>= 1.12.0), libwebp7 (>= 1.3.2), libwebpmux3 (>= 1.3.2), libx264-164 (>= 2:0.164.3108+git31e19f9), libx265-199 (>= 3.5), libxvidcore4 (>= 1.2.2), libzvbi0t64 (>= 0.2.35), zlib1g (>= 1:1.2.0)
+Conflicts: libavcodec60
+Filename: pool/main/f/ffmpeg/libavcodec-extra60_6.1.1-3ubuntu5+esm2_arm64.deb
+Size: 5773126
+SHA256: 3f270fbcf824f9e891a40b601e17babcb751fa42392f7171649ccc24fe7d9d8c
+SHA1: 7517265c7caef6161cdeaba29346d50591029139
+MD5sum: a84a7cbfebaeff10fbe425f1c5451328
+Description: FFmpeg library with additional de/encoders for audio/video codecs
+Description-md5: bc6eb2b0c8f4eff395c72ba26b01a8ee
+Multi-Arch: same
+Original-Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+
+Package: libavcodec60
+Source: ffmpeg
+Priority: optional
+Section: libs
+Installed-Size: 14161
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: arm64
+Version: 7:6.1.1-3ubuntu5+esm2
+Suggests: libcuda1, libnvcuvid1, libnvidia-encode1
+Depends: libaom3 (>= 3.2.0), libavutil58 (= 7:6.1.1-3ubuntu5+esm2), libc6 (>= 2.35), libcairo2 (>= 1.2.4), libcodec2-1.2 (>= 1.2.0), libdav1d7 (>= 1.1.0), libglib2.0-0t64 (>= 2.12.0), libgsm1 (>= 1.0.18), libjxl0.7 (>= 0.7.0), liblzma5 (>= 5.1.1alpha+20120614), libmp3lame0 (>= 3.100), libopenjp2-7 (>= 2.0.0), libopus0 (>= 1.1), librav1e0 (>= 0.5.1), librsvg2-2 (>= 2.52.5), libshine3 (>= 3.1.0), libsnappy1v5 (>= 1.1.10), libspeex1 (>= 1.2~), libsvtav1enc1d1 (>= 1.7.0+dfsg), libswresample4 (>= 7:6.0), libtheora0 (>= 1.0), libtwolame0 (>= 0.3.10), libva2 (>= 2.9.0), libvorbis0a (>= 1.1.2), libvorbisenc2 (>= 1.1.2), libvpx9 (>= 1.12.0), libwebp7 (>= 1.3.2), libwebpmux3 (>= 1.3.2), libx264-164 (>= 2:0.164.3108+git31e19f9), libx265-199 (>= 3.5), libxvidcore4 (>= 1.2.2), libzvbi0t64 (>= 0.2.35), zlib1g (>= 1:1.2.0)
+Filename: pool/main/f/ffmpeg/libavcodec60_6.1.1-3ubuntu5+esm2_arm64.deb
+Size: 5768978
+SHA256: b2327c9de43ff573cd2531208fd5a770e959d8f34a1129dd9082e5e60563b6b9
+SHA1: fcbf7ab1c67db6131d9ab3bc53e91141101606da
+MD5sum: 77e59f9f05e4dc701962b90e30721142
+Description: FFmpeg library with de/encoders for audio/video codecs - runtime files
+ FFmpeg is the leading multimedia framework, able to decode, encode, transcode,
+ mux, demux, stream, filter and play pretty much anything that humans and
+ machines have created. It supports the most obscure ancient formats up to the
+ cutting edge.
+ .
+ This library provides a generic encoding/decoding framework and
+ contains multiple decoders and encoders for audio, video and subtitle streams,
+ and several bitstream filters.
+ .
+ The shared architecture provides various services ranging from bit stream I/O
+ to DSP optimizations, and makes it suitable for implementing robust and fast
+ codecs as well as for experimentation.
+ .
+ This package contains the runtime files.
+Multi-Arch: same
+Original-Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+
+Package: libavdevice-dev
+Source: ffmpeg
+Priority: optional
+Section: libdevel
+Installed-Size: 428
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: arm64
+Version: 7:6.1.1-3ubuntu5+esm2
+Depends: libavcodec-dev (= 7:6.1.1-3ubuntu5+esm2), libavdevice60 (= 7:6.1.1-3ubuntu5+esm2), libavfilter-dev (= 7:6.1.1-3ubuntu5+esm2), libavformat-dev (= 7:6.1.1-3ubuntu5+esm2), libavutil-dev (= 7:6.1.1-3ubuntu5+esm2), libpostproc-dev (= 7:6.1.1-3ubuntu5+esm2), libswscale-dev (= 7:6.1.1-3ubuntu5+esm2), libswresample-dev (= 7:6.1.1-3ubuntu5+esm2)
+Filename: pool/main/f/ffmpeg/libavdevice-dev_6.1.1-3ubuntu5+esm2_arm64.deb
+Size: 97934
+SHA256: 12d1b1718dc25738c9f16c544fa4654fa6dcadadbc63b1c7d870c0a73dc24091
+SHA1: df44aa94a6dfe777c5e68608adf09ebb2a224922
+MD5sum: 6c7687172d425bbd3abef8b461e59671
+Description: FFmpeg library for handling input and output devices - development files
+ FFmpeg is the leading multimedia framework, able to decode, encode, transcode,
+ mux, demux, stream, filter and play pretty much anything that humans and
+ machines have created. It supports the most obscure ancient formats up to the
+ cutting edge.
+ .
+ This library provides a generic framework for grabbing from and rendering to
+ many common multimedia input/output devices, and supports several input and
+ output devices, including Video4Linux2, VfW, DShow, and ALSA.
+ .
+ This package contains the development files.
+Multi-Arch: same
+Original-Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+
+Package: libavdevice60
+Source: ffmpeg
+Priority: optional
+Section: libs
+Installed-Size: 258
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: arm64
+Version: 7:6.1.1-3ubuntu5+esm2
+Depends: libasound2t64 (>= 1.0.16), libavc1394-0 (>= 0.5.3), libavcodec60 (>= 7:6.0), libavfilter9 (>= 7:6.0), libavformat60 (= 7:6.1.1-3ubuntu5+esm2), libavutil58 (= 7:6.1.1-3ubuntu5+esm2), libc6 (>= 2.34), libcaca0 (>= 0.99.beta20), libcdio-cdda2t64 (>= 10.2+2.0.0), libcdio-paranoia2t64 (>= 10.2+2.0.0), libdc1394-25 (>= 2.2.6), libdrm2 (>= 2.4.101), libgl1, libiec61883-0 (>= 1.2.0), libjack-jackd2-0 (>= 1.9.10+20150825) | libjack-0.125, libopenal1 (>= 1.14), libpulse0 (>= 0.99.1), libraw1394-11 (>= 2.1.2), libsdl2-2.0-0 (>= 2.0.12), libx11-6, libxcb-shape0, libxcb-shm0, libxcb-xfixes0, libxcb1, libxext6, libxv1
+Filename: pool/main/f/ffmpeg/libavdevice60_6.1.1-3ubuntu5+esm2_arm64.deb
+Size: 81586
+SHA256: ef9407f89a288dcbd60f305a7b9fdb7ac41db709d752e35313966ff69e55b21d
+SHA1: de4cf717ef1bfc59d78649623d8f39442f3a37ff
+MD5sum: 3e232814f89ad7d9df1763f66e35ed30
+Description: FFmpeg library for handling input and output devices - runtime files
+ FFmpeg is the leading multimedia framework, able to decode, encode, transcode,
+ mux, demux, stream, filter and play pretty much anything that humans and
+ machines have created. It supports the most obscure ancient formats up to the
+ cutting edge.
+ .
+ This library provides a generic framework for grabbing from and rendering to
+ many common multimedia input/output devices, and supports several input and
+ output devices, including Video4Linux2, VfW, DShow, and ALSA.
+ .
+ This package contains the runtime files.
+Multi-Arch: same
+Original-Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+
+Package: libavfilter-dev
+Source: ffmpeg
+Priority: optional
+Section: libdevel
+Installed-Size: 8621
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: arm64
+Version: 7:6.1.1-3ubuntu5+esm2
+Depends: libavcodec-dev (= 7:6.1.1-3ubuntu5+esm2), libavfilter9 (= 7:6.1.1-3ubuntu5+esm2), libavformat-dev (= 7:6.1.1-3ubuntu5+esm2), libavutil-dev (= 7:6.1.1-3ubuntu5+esm2), libpostproc-dev (= 7:6.1.1-3ubuntu5+esm2), libswresample-dev (= 7:6.1.1-3ubuntu5+esm2), libswscale-dev (= 7:6.1.1-3ubuntu5+esm2)
+Filename: pool/main/f/ffmpeg/libavfilter-dev_6.1.1-3ubuntu5+esm2_arm64.deb
+Size: 2215716
+SHA256: d31aa9d3d33ee4e3a0b326ea79d2566838a942b3f7f188ab6a65d259d9b82d43
+SHA1: 90fdd10fb8ac8ba46f7241714994a35d78245b67
+MD5sum: a69905bb3de25c68286c2fb52c8206df
+Description: FFmpeg library containing media filters - development files
+ FFmpeg is the leading multimedia framework, able to decode, encode, transcode,
+ mux, demux, stream, filter and play pretty much anything that humans and
+ machines have created. It supports the most obscure ancient formats up to the
+ cutting edge.
+ .
+ This library provides a generic audio/video filtering framework containing
+ several filters, sources and sinks.
+ .
+ This package contains the development files.
+Multi-Arch: same
+Original-Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+
+Package: libavfilter-extra
+Source: ffmpeg
+Priority: optional
+Section: metapackages
+Installed-Size: 58
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: arm64
+Version: 7:6.1.1-3ubuntu5+esm2
+Depends: libavfilter-extra9 (= 7:6.1.1-3ubuntu5+esm2)
+Filename: pool/main/f/ffmpeg/libavfilter-extra_6.1.1-3ubuntu5+esm2_arm64.deb
+Size: 15392
+SHA256: 47bfc6773d5e8d0693c6c85eab0eea9315ab59aeb392b288324c30a9dd4203dd
+SHA1: 175c3f637c05191ed5f418e952cda6598c93d15a
+MD5sum: 509513952d17d1f789cc172ef5712c53
+Description: FFmpeg library with extra filters (metapackage)
+ FFmpeg is the leading multimedia framework, able to decode, encode, transcode,
+ mux, demux, stream, filter and play pretty much anything that humans and
+ machines have created. It supports the most obscure ancient formats up to the
+ cutting edge.
+ .
+ This metapackage depends on the latest version of the libavfilter variant
+ that offers additional filter support. Application packages can depend
+ on it if they require or suggest this variant in a robust manner.
+Multi-Arch: same
+Original-Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+
+Package: libavfilter-extra9
+Source: ffmpeg
+Priority: optional
+Section: libs
+Installed-Size: 12429
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: arm64
+Version: 7:6.1.1-3ubuntu5+esm2
+Provides: libavfilter9 (= 7:6.1.1-3ubuntu5+esm2)
+Depends: libass9 (>= 1:0.15.0), libavcodec60 (= 7:6.1.1-3ubuntu5+esm2), libavformat60 (>= 7:6.0), libavutil58 (= 7:6.1.1-3ubuntu5+esm2), libbs2b0 (>= 3.1.0+dfsg), libc6 (>= 2.38), libflite1 (>= 1.4-release-9~), libfontconfig1 (>= 2.12.6), libfreetype6 (>= 2.2.1), libfribidi0 (>= 0.19.2), libharfbuzz0b (>= 0.9.9), liblilv-0-0 (>= 0.14.2~dfsg0), libmysofa1 (>= 0.7~), libplacebo338 (>= 6.338.1), libpocketsphinx3 (>= 0.8.0+real5prealpha+1), libpostproc57 (>= 7:6.0), librubberband2 (>= 3.3.0+dfsg), libsphinxbase3t64 (>= 0.8+5prealpha), libstdc++6 (>= 13.1), libswresample4 (>= 7:6.0), libswscale7 (>= 7:6.0), libtesseract5 (>= 5.3.4), libva2 (>= 1.7.3), libvidstab1.1, libzimg2 (>= 0.3.1), libzmq5 (>= 3.2.3+dfsg), ocl-icd-libopencl1 | libopencl1, ocl-icd-libopencl1 (>= 1.0) | libopencl-1.2-1, zlib1g (>= 1:1.1.4)
+Conflicts: libavfilter9
+Filename: pool/main/f/ffmpeg/libavfilter-extra9_6.1.1-3ubuntu5+esm2_arm64.deb
+Size: 4115812
+SHA256: 2ba853258b0744ec8e346643bd5caf9bc2a2494f3d88b049a3a6cf84ec44745f
+SHA1: 510cbd8982df85d5daca5a494aa94397550b11fa
+MD5sum: 7b1f2a22031403946c79f054e108cdca
+Description: FFmpeg library with extra media filters - runtime files
+Description-md5: 296b1ac3763d8c2fb76fcd304bb97358
+Multi-Arch: same
+Original-Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+
+Package: libavfilter9
+Source: ffmpeg
+Priority: optional
+Section: libs
+Installed-Size: 12429
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: arm64
+Version: 7:6.1.1-3ubuntu5+esm2
+Depends: libass9 (>= 1:0.15.0), libavcodec60 (= 7:6.1.1-3ubuntu5+esm2), libavformat60 (>= 7:6.0), libavutil58 (= 7:6.1.1-3ubuntu5+esm2), libbs2b0 (>= 3.1.0+dfsg), libc6 (>= 2.38), libflite1 (>= 1.4-release-9~), libfontconfig1 (>= 2.12.6), libfreetype6 (>= 2.2.1), libfribidi0 (>= 0.19.2), libharfbuzz0b (>= 0.9.9), liblilv-0-0 (>= 0.14.2~dfsg0), libmysofa1 (>= 0.7~), libplacebo338 (>= 6.338.1), libpocketsphinx3 (>= 0.8.0+real5prealpha+1), libpostproc57 (>= 7:6.0), librubberband2 (>= 3.3.0+dfsg), libsphinxbase3t64 (>= 0.8+5prealpha), libstdc++6 (>= 13.1), libswresample4 (>= 7:6.0), libswscale7 (>= 7:6.0), libva2 (>= 1.7.3), libvidstab1.1, libzimg2 (>= 0.3.1), libzmq5 (>= 3.2.3+dfsg), ocl-icd-libopencl1 | libopencl1, ocl-icd-libopencl1 (>= 1.0) | libopencl-1.2-1, zlib1g (>= 1:1.1.4)
+Filename: pool/main/f/ffmpeg/libavfilter9_6.1.1-3ubuntu5+esm2_arm64.deb
+Size: 4087632
+SHA256: 9caf4b26c3964517975e6899c8b1f25c2e19ca7f955daafb884806960f806dc6
+SHA1: d0e5bf197b705de0a0e9eb3f4a4f3e7610feebbb
+MD5sum: e28b6c5e54496c1b428ba0e59f2ce2ac
+Description: FFmpeg library containing media filters - runtime files
+ FFmpeg is the leading multimedia framework, able to decode, encode, transcode,
+ mux, demux, stream, filter and play pretty much anything that humans and
+ machines have created. It supports the most obscure ancient formats up to the
+ cutting edge.
+ .
+ This library provides a generic audio/video filtering framework containing
+ several filters, sources and sinks.
+ .
+ This package contains the runtime files.
+Multi-Arch: same
+Original-Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+
+Package: libavformat-dev
+Source: ffmpeg
+Priority: optional
+Section: libdevel
+Installed-Size: 5986
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: arm64
+Version: 7:6.1.1-3ubuntu5+esm2
+Depends: libavcodec-dev (= 7:6.1.1-3ubuntu5+esm2), libavformat60 (= 7:6.1.1-3ubuntu5+esm2), libavutil-dev (= 7:6.1.1-3ubuntu5+esm2), libswresample-dev (= 7:6.1.1-3ubuntu5+esm2)
+Filename: pool/main/f/ffmpeg/libavformat-dev_6.1.1-3ubuntu5+esm2_arm64.deb
+Size: 1468902
+SHA256: 8f7601a2ffcfdc1fbac652736c36011a9016529d6884bbae876d95673ee7d928
+SHA1: c014161a2384acbc8f6193748b16532a07d95ba6
+MD5sum: f736ee10a7928c18304426f78b2cbee2
+Description: FFmpeg library with (de)muxers for multimedia containers - development files
+ FFmpeg is the leading multimedia framework, able to decode, encode, transcode,
+ mux, demux, stream, filter and play pretty much anything that humans and
+ machines have created. It supports the most obscure ancient formats up to the
+ cutting edge.
+ .
+ This library provides a generic framework for multiplexing and demultiplexing
+ (muxing and demuxing) audio, video and subtitle streams. It encompasses
+ multiple muxers and demuxers for multimedia container formats. It also
+ supports several input and output protocols to access a media resource.
+ .
+ This package contains the development files.
+Multi-Arch: same
+Original-Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+
+Package: libavformat-extra
+Source: ffmpeg
+Priority: optional
+Section: metapackages
+Installed-Size: 58
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: arm64
+Version: 7:6.1.1-3ubuntu5+esm2
+Depends: libavformat-extra60 (= 7:6.1.1-3ubuntu5+esm2)
+Filename: pool/main/f/ffmpeg/libavformat-extra_6.1.1-3ubuntu5+esm2_arm64.deb
+Size: 15400
+SHA256: 03c8cecfc7d46343f891019c1b43c3d8d0342002eb3151b6d85e26ded1d0b1f6
+SHA1: cd8ee74d2d39b185c0140b2bc3e15d0bd63fff32
+MD5sum: f5bd03ab8f66977df3137121cc17918d
+Description: FFmpeg library with extra (de)muxers (metapackage)
+ FFmpeg is the leading multimedia framework, able to decode, encode, transcode,
+ mux, demux, stream, filter and play pretty much anything that humans and
+ machines have created. It supports the most obscure ancient formats up to the
+ cutting edge.
+ .
+ This metapackage depends on the latest version of the libavformat variant
+ that offers additional (de)muxers support. Application packages can depend
+ on it if they require or suggest this variant in a robust manner.
+Multi-Arch: same
+Original-Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+
+Package: libavformat-extra60
+Source: ffmpeg
+Priority: optional
+Section: libs
+Installed-Size: 2892
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: arm64
+Version: 7:6.1.1-3ubuntu5+esm2
+Provides: libavformat60 (= 7:6.1.1-3ubuntu5+esm2)
+Depends: libavcodec60 (= 7:6.1.1-3ubuntu5+esm2), libavutil58 (= 7:6.1.1-3ubuntu5+esm2), libbluray2 (>= 1:0.2.2), libbz2-1.0, libc6 (>= 2.38), libchromaprint1 (>= 1.3.2), libgme0 (>= 0.5.5), libgnutls30t64 (>= 3.8.1), libopenmpt0t64 (>= 0.3.0), librabbitmq4 (>= 0.6.0), librist4 (>= 0.2.6+dfsg), libsmbclient0 (>= 2:4.0.3+dfsg1), libsrt1.5-gnutls (>= 1.5.3), libssh-gcrypt-4 (>= 0.8.0), libxml2 (>= 2.7.4), libzmq5 (>= 4.0.1+dfsg), zlib1g (>= 1:1.2.0.2)
+Conflicts: libavformat60
+Filename: pool/main/f/ffmpeg/libavformat-extra60_6.1.1-3ubuntu5+esm2_arm64.deb
+Size: 1186588
+SHA256: eab39aaab45fdf7b3aa67cac279e191f6f9badeb41e259cc71bfe859dda6415a
+SHA1: 509c9ad68cde6df07aa5607a591d272ffca895d2
+MD5sum: ce2e3883eef44ac5776463f544af374f
+Description: FFmpeg library with additional (de)muxers for multimedia containers
+Description-md5: ee3219e266d82931f2364d96166ac4b9
+Multi-Arch: same
+Original-Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+
+Package: libavformat60
+Source: ffmpeg
+Priority: optional
+Section: libs
+Installed-Size: 2953
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: arm64
+Version: 7:6.1.1-3ubuntu5+esm2
+Depends: libavcodec60 (= 7:6.1.1-3ubuntu5+esm2), libavutil58 (= 7:6.1.1-3ubuntu5+esm2), libbluray2 (>= 1:0.2.2), libbz2-1.0, libc6 (>= 2.38), libchromaprint1 (>= 1.3.2), libgme0 (>= 0.5.5), libgnutls30t64 (>= 3.8.1), libopenmpt0t64 (>= 0.3.0), librabbitmq4 (>= 0.6.0), librist4 (>= 0.2.6+dfsg), libsrt1.5-gnutls (>= 1.5.3), libssh-gcrypt-4 (>= 0.8.0), libxml2 (>= 2.7.4), libzmq5 (>= 4.0.1+dfsg), zlib1g (>= 1:1.2.0.2)
+Filename: pool/main/f/ffmpeg/libavformat60_6.1.1-3ubuntu5+esm2_arm64.deb
+Size: 1185586
+SHA256: 6cc9880a3b544c5c23e938dad44f35ee88bdf3aaed90c557928fd8a768d1a82a
+SHA1: 030d6655b2deee93efdf1e5357e319801a62126d
+MD5sum: 836d1325d9538622c294c90e8e56016a
+Description: FFmpeg library with (de)muxers for multimedia containers - runtime files
+ FFmpeg is the leading multimedia framework, able to decode, encode, transcode,
+ mux, demux, stream, filter and play pretty much anything that humans and
+ machines have created. It supports the most obscure ancient formats up to the
+ cutting edge.
+ .
+ This library provides a generic framework for multiplexing and demultiplexing
+ (muxing and demuxing) audio, video and subtitle streams. It encompasses
+ multiple muxers and demuxers for multimedia container formats. It also
+ supports several input and output protocols to access a media resource.
+ .
+ This package contains the runtime files.
+Multi-Arch: same
+Original-Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+
+Package: libavutil-dev
+Source: ffmpeg
+Priority: optional
+Section: libdevel
+Installed-Size: 2260
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: arm64
+Version: 7:6.1.1-3ubuntu5+esm2
+Depends: libavutil58 (= 7:6.1.1-3ubuntu5+esm2)
+Filename: pool/main/f/ffmpeg/libavutil-dev_6.1.1-3ubuntu5+esm2_arm64.deb
+Size: 536460
+SHA256: 5e1ab5713d7451b533388ede1016b0b4cbf687cafef1518ccdbbff4eca9cc3bd
+SHA1: dcbb3d94e3beb8781bc9b1807305a3e3404a4219
+MD5sum: c451ea60c314f730bfb46ddac5d05057
+Description: FFmpeg library with functions for simplifying programming - development files
+ FFmpeg is the leading multimedia framework, able to decode, encode, transcode,
+ mux, demux, stream, filter and play pretty much anything that humans and
+ machines have created. It supports the most obscure ancient formats up to the
+ cutting edge.
+ .
+ This library is a utility library to aid portable multimedia programming.
+ It contains safe portable string functions, random number generators, data
+ structures, additional mathematics functions, cryptography and multimedia
+ related functionality (like enumerations for pixel and sample formats).
+ It is not a library for code needed by both libavcodec and libavformat.
+ The goal for this library is to be modular, small, efficient and useful.
+ .
+ This package contains the development files.
+Multi-Arch: same
+Original-Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+
+Package: libavutil58
+Source: ffmpeg
+Priority: optional
+Section: libs
+Installed-Size: 1052
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: arm64
+Version: 7:6.1.1-3ubuntu5+esm2
+Depends: libc6 (>= 2.38), libdrm2 (>= 2.4.66), libva-drm2 (>= 1.3), libva-x11-2 (>= 1.3), libva2 (>= 2.1.0), libvdpau1 (>= 0.2), libx11-6, ocl-icd-libopencl1 | libopencl1, ocl-icd-libopencl1 (>= 1.0) | libopencl-1.2-1
+Filename: pool/main/f/ffmpeg/libavutil58_6.1.1-3ubuntu5+esm2_arm64.deb
+Size: 389192
+SHA256: caafcd1bbecb2923b677bb87a0c755859f24a7e5c222d5036f0bdcb062cd34a9
+SHA1: 4e6bd3d42f23295a863b09cecb8b194d350b2b2c
+MD5sum: cfd6a81e59ce4a5443eaf4f3a9af34bb
+Description: FFmpeg library with functions for simplifying programming - runtime files
+ FFmpeg is the leading multimedia framework, able to decode, encode, transcode,
+ mux, demux, stream, filter and play pretty much anything that humans and
+ machines have created. It supports the most obscure ancient formats up to the
+ cutting edge.
+ .
+ This library is a utility library to aid portable multimedia programming.
+ It contains safe portable string functions, random number generators, data
+ structures, additional mathematics functions, cryptography and multimedia
+ related functionality (like enumerations for pixel and sample formats).
+ It is not a library for code needed by both libavcodec and libavformat.
+ The goal for this library is to be modular, small, efficient and useful.
+ .
+ This package contains the runtime files.
+Multi-Arch: same
+Original-Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+
+Package: libcjson-dev
+Source: cjson
+Priority: optional
+Section: libdevel
+Installed-Size: 63
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: arm64
+Version: 1.7.17-1ubuntu0.1~esm2
+Depends: libcjson1 (= 1.7.17-1ubuntu0.1~esm2)
+Filename: pool/main/c/cjson/libcjson-dev_1.7.17-1ubuntu0.1~esm2_arm64.deb
+Size: 19502
+SHA256: 9920562f9242795ce25cfc28f52cf927fd8537732e253483011b4c6d29092e6c
+SHA1: b8d40e310c09e9cb67dbe9d3817f612842099fa4
+MD5sum: e920d3f4b819149c0c55d86f75fdcda5
+Description: Ultralightweight JSON parser in ANSI C (development files)
+ cJSON is a ultralightweight json parse.
+ .
+ It aims to be the dumbest possible parser that you can get your job done with.
+ .
+ It's a single file of C, and a single header file.
+ .
+ This package contains the header files of cJSON.
+Multi-Arch: same
+Original-Maintainer: Boyuan Yang <byang@debian.org>
+
+Package: libcjson1
+Source: cjson
+Priority: optional
+Section: libs
+Installed-Size: 152
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: arm64
+Version: 1.7.17-1ubuntu0.1~esm2
+Depends: libc6 (>= 2.17)
+Filename: pool/main/c/cjson/libcjson1_1.7.17-1ubuntu0.1~esm2_arm64.deb
+Size: 21994
+SHA256: 3bbc6ff3624d9ba39c9463a7dcbc6113773120c81d01c52f34ab544bbb5582af
+SHA1: c49cedfcc7ec096129a7e9be8962599eca74801f
+MD5sum: 17c568a2fdc26f14063241ba81682403
+Description: Ultralightweight JSON parser in ANSI C
+ cJSON is a ultralightweight json parse.
+ .
+ It aims to be the dumbest possible parser that you can get your job done with.
+ .
+ It's a single file of C, and a single header file.
+ .
+ This package contains the shared libraries.
+Multi-Arch: same
+Original-Maintainer: Boyuan Yang <byang@debian.org>
+
+Package: libdcmtk-dev
+Source: dcmtk
+Priority: optional
+Section: libdevel
+Installed-Size: 14262
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: arm64
+Version: 3.6.7-9.1ubuntu0.1~esm1
+Suggests: dcmtk-doc
+Provides: libdcmtk17-dev
+Depends: libdcmtk17t64 (= 3.6.7-9.1ubuntu0.1~esm1), libpng-dev, libssl-dev, libtiff-dev, libwrap0-dev, libxml2-dev
+Filename: pool/main/d/dcmtk/libdcmtk-dev_3.6.7-9.1ubuntu0.1~esm1_arm64.deb
+Size: 1024026
+SHA256: 1ead2a9983225bbf3e3b8437d53858f9e388b4ccf910a1a41b97a2c1eb5ca276
+SHA1: ae6b9954f5b0716a4d27f695f69b1929a6749e15
+MD5sum: 93d0a321852ef7dd68425b2c57d387ee
+Description: OFFIS DICOM toolkit development libraries and headers
+ DCMTK includes a collection of libraries and applications for examining,
+ constructing and converting DICOM image files, handling offline media,
+ sending and receiving images over a network connection, as well as
+ demonstrative image storage and worklist servers.
+ .
+ This package contains development libraries and headers for DCMTK. You
+ only need to install this if you are developing programs that use the
+ DCMTK libraries.
+ .
+ Note: This version was compiled with libssl support.
+Original-Maintainer: Debian Med Packaging Team <debian-med-packaging@lists.alioth.debian.org>
+
+Package: libdcmtk17t64
+Source: dcmtk
+Priority: optional
+Section: libs
+Installed-Size: 23160
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: arm64
+Version: 3.6.7-9.1ubuntu0.1~esm1
+Replaces: libdcmtk16 (= 3.6.7-1), libdcmtk17
+Provides: libdcmtk17 (= 3.6.7-9.1ubuntu0.1~esm1)
+Depends: libc6 (>= 2.38), libgcc-s1 (>= 3.3.1), libpng16-16t64 (>= 1.6.2), libssl3t64 (>= 3.0.0), libstdc++6 (>= 13.1), libtiff6 (>= 4.0.3), libwrap0 (>= 7.6-4~), libxml2 (>= 2.7.4), zlib1g (>= 1:1.1.4)
+Breaks: libdcmtk16 (= 3.6.7-1), libdcmtk17 (<< 3.6.7-9.1ubuntu0.1~esm1)
+Filename: pool/main/d/dcmtk/libdcmtk17t64_3.6.7-9.1ubuntu0.1~esm1_arm64.deb
+Size: 4823004
+SHA256: e60b8a875677126ac11c888d8070bc15b6285307eb25906c7378a6dd58887fbb
+SHA1: fb375704d1091ad38cdb651b2288d140ba9e47c1
+MD5sum: 052310a734515f71a42dcd3061355c8e
+Description: OFFIS DICOM toolkit runtime libraries
+ DCMTK includes a collection of libraries and applications for examining,
+ constructing and converting DICOM image files, handling offline media,
+ sending and receiving images over a network connection, as well as
+ demonstrative image storage and worklist servers.
+ .
+ This package contains the runtime libraries for the DCMTK utility
+ applications.
+ .
+ Note: This version was compiled with libssl support.
+Multi-Arch: same
+Original-Maintainer: Debian Med Packaging Team <debian-med-packaging@lists.alioth.debian.org>
+
+Package: libpostproc-dev
+Source: ffmpeg
+Priority: optional
+Section: libdevel
+Installed-Size: 126
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: arm64
+Version: 7:6.1.1-3ubuntu5+esm2
+Depends: libavutil-dev (= 7:6.1.1-3ubuntu5+esm2), libpostproc57 (= 7:6.1.1-3ubuntu5+esm2)
+Filename: pool/main/f/ffmpeg/libpostproc-dev_6.1.1-3ubuntu5+esm2_arm64.deb
+Size: 42012
+SHA256: b67220b21e25a75ba3bbb21057b890e46309a3c9e63badab0fe5e5795215b8c5
+SHA1: 569c7e57f03ba210c061291d99bbcd0fec9a9d67
+MD5sum: 58faad9973b0d977a733291e5f5f7b41
+Description: FFmpeg library for post processing - development files
+ FFmpeg is the leading multimedia framework, able to decode, encode, transcode,
+ mux, demux, stream, filter and play pretty much anything that humans and
+ machines have created. It supports the most obscure ancient formats up to the
+ cutting edge.
+ .
+ This library provides video post processing.
+ .
+ This package contains the development files.
+Multi-Arch: same
+Original-Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+
+Package: libpostproc57
+Source: ffmpeg
+Priority: optional
+Section: libs
+Installed-Size: 133
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: arm64
+Version: 7:6.1.1-3ubuntu5+esm2
+Depends: libavutil58 (>= 7:6.0), libc6 (>= 2.17)
+Filename: pool/main/f/ffmpeg/libpostproc57_6.1.1-3ubuntu5+esm2_arm64.deb
+Size: 41232
+SHA256: 10eb0b9f66c03c6c2174206d429ef2535ed3142d80e1b288bbdca291535cc7a8
+SHA1: 2a7e877a4c0bee919afc1c1913f046b3b2637db9
+MD5sum: d3045b3029ba463d84b94406f0986a7d
+Description: FFmpeg library for post processing - runtime files
+ FFmpeg is the leading multimedia framework, able to decode, encode, transcode,
+ mux, demux, stream, filter and play pretty much anything that humans and
+ machines have created. It supports the most obscure ancient formats up to the
+ cutting edge.
+ .
+ This library provides video post processing.
+ .
+ This package contains the runtime files.
+Multi-Arch: same
+Original-Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+
+Package: libswresample-dev
+Source: ffmpeg
+Priority: optional
+Section: libdevel
+Installed-Size: 265
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: arm64
+Version: 7:6.1.1-3ubuntu5+esm2
+Depends: libavutil-dev (= 7:6.1.1-3ubuntu5+esm2), libswresample4 (= 7:6.1.1-3ubuntu5+esm2)
+Filename: pool/main/f/ffmpeg/libswresample-dev_6.1.1-3ubuntu5+esm2_arm64.deb
+Size: 70164
+SHA256: d9bb7c9cb81e4473741d5080c8df0a8745d14876a8c530c780ddfe72b323819e
+SHA1: a3252fc063cfbb529747ca72840b50889b7e6474
+MD5sum: 2d1c58544c17e8d6822b217dcef8b7b0
+Description: FFmpeg library for audio resampling, rematrixing etc. - development files
+Description-md5: 884a565da1d7b0df620f6f4531b50cc7
+Multi-Arch: same
+Original-Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+
+Package: libswresample4
+Source: ffmpeg
+Priority: optional
+Section: libs
+Installed-Size: 198
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: arm64
+Version: 7:6.1.1-3ubuntu5+esm2
+Depends: libavutil58 (>= 7:6.1), libc6 (>= 2.29), libsoxr0 (>= 0.1.0)
+Filename: pool/main/f/ffmpeg/libswresample4_6.1.1-3ubuntu5+esm2_arm64.deb
+Size: 57908
+SHA256: d67a15d731f9973d0bc3ffb29ffcb5c4cb3808014da7520ee84ef160998ac184
+SHA1: fb9a840cf240311b4683b9039bb0bc1848850391
+MD5sum: 1b0f978231e84d008b1bdb4a86d29f70
+Description: FFmpeg library for audio resampling, rematrixing etc. - runtime files
+Description-md5: 6a8bb102a0a38d88235c0c34c1077ff5
+Multi-Arch: same
+Original-Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+
+Package: libswscale-dev
+Source: ffmpeg
+Priority: optional
+Section: libdevel
+Installed-Size: 769
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: arm64
+Version: 7:6.1.1-3ubuntu5+esm2
+Depends: libavutil-dev (= 7:6.1.1-3ubuntu5+esm2), libswscale7 (= 7:6.1.1-3ubuntu5+esm2)
+Filename: pool/main/f/ffmpeg/libswscale-dev_6.1.1-3ubuntu5+esm2_arm64.deb
+Size: 196806
+SHA256: 8175dbe72e5d5c9ec187198431a6154f264100c3091db2c120a0b1fa7009cff1
+SHA1: 165f0fd2f19c8625188c9ca4248656fd56c02974
+MD5sum: 5682c183c8a53eb91f848143aad7e623
+Description: FFmpeg library for image scaling and various conversions - development files
+Description-md5: 155197ebe011bff80652677e5e123249
+Multi-Arch: same
+Original-Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+
+Package: libswscale7
+Source: ffmpeg
+Priority: optional
+Section: libs
+Installed-Size: 518
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: arm64
+Version: 7:6.1.1-3ubuntu5+esm2
+Depends: libavutil58 (= 7:6.1.1-3ubuntu5+esm2), libc6 (>= 2.34)
+Filename: pool/main/f/ffmpeg/libswscale7_6.1.1-3ubuntu5+esm2_arm64.deb
+Size: 172790
+SHA256: 873ed122b1cc39c75604b7b8ba87d695b1d758f32031f7a53a90c1a5bd58a388
+SHA1: 33a0463c046924880bc77088be3f4aeb8abc32b0
+MD5sum: eb8209440c336c96c624b90c3647b206
+Description: FFmpeg library for image scaling and various conversions - runtime files
+Description-md5: 9e010c0c66f61ab5a0fddfb6e1aa7d52
+Multi-Arch: same
+Original-Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+
+Package: libvirtodbc0
+Source: virtuoso-opensource
+Priority: optional
+Section: libs
+Installed-Size: 2251
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: arm64
+Version: 7.2.5.1+dfsg1-0.8ubuntu0.1~esm2
+Depends: odbcinst, virtuoso-opensource-7-common (= 7.2.5.1+dfsg1-0.8ubuntu0.1~esm2), debconf (>= 0.5) | debconf-2.0, libc6 (>= 2.38), libssl3t64 (>= 3.0.0), libtirpc3t64 (>= 1.0.2)
+Breaks: libsoprano4 (<< 2.9.4+dfsg-1)
+Filename: pool/main/v/virtuoso-opensource/libvirtodbc0_7.2.5.1+dfsg1-0.8ubuntu0.1~esm2_arm64.deb
+Size: 324384
+SHA256: fa6bcec3e971834b4a7f67dcd5b12f65125d43e55808289baf3a3ba3e8006e12
+SHA1: 3c913f0b2da7ad5defe9a4755339dfd3b6b75440
+MD5sum: 01816c887c6187866f4cc15a41c06b8d
+Description: high-performance database - ODBC libraries
+ OpenLink Virtuoso is a high-performance object-relational SQL database.
+ It provides transactions, a smart SQL compiler, hot backup, SQL:1999
+ support, a powerful stored-procedure language supporting server-side
+ Java or .NET, and more. It supports all major data-access interfaces,
+ including ODBC, JDBC, ADO.NET, and OLE/DB.
+ .
+ This package contains the Virtuoso ODBC client libraries.
+Original-Maintainer: Debian Science Maintainers <debian-science-maintainers@lists.alioth.debian.org>
+
+Package: libvirtuoso5.5-cil
+Source: virtuoso-opensource
+Priority: optional
+Section: cli-mono
+Installed-Size: 254
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: arm64
+Version: 7.2.5.1+dfsg1-0.8ubuntu0.1~esm2
+Depends: cli-common (>= 0.5.1), libmono-corlib4.5-cil (>= 5.18.0.240), libmono-system-data4.0-cil (>= 5.16.0.220), libmono-system-drawing4.0-cil (>= 5.12.0.309), libmono-system-enterpriseservices4.0-cil (>= 1.0), libmono-system-xml4.0-cil (>= 4.6.1.3), libmono-system4.0-cil (>= 5.18.0.240)
+Filename: pool/main/v/virtuoso-opensource/libvirtuoso5.5-cil_7.2.5.1+dfsg1-0.8ubuntu0.1~esm2_arm64.deb
+Size: 77582
+SHA256: 295bf7d027e518cb73bf91e966878890de682c8c919552373585a9b50ef125ec
+SHA1: e974f0891f2bf42ae459857510a409e2439b95ac
+MD5sum: 8488af9bb77114df9f9c12ee4d9a96f5
+Description: high-performance database - Mono assemblies
+ OpenLink Virtuoso is a high-performance object-relational SQL database.
+ It provides transactions, a smart SQL compiler, hot backup, SQL:1999
+ support, a powerful stored-procedure language supporting server-side
+ Java or .NET, and more. It supports all major data-access interfaces,
+ including ODBC, JDBC, ADO.NET, and OLE/DB.
+ .
+ This package contains Virtuoso's ADO.NET data provider for Mono.
+Original-Maintainer: Debian Science Maintainers <debian-science-maintainers@lists.alioth.debian.org>
+
+Package: libxmltok1-dev
+Source: libxmltok
+Priority: optional
+Section: libdevel
+Installed-Size: 239
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: arm64
+Version: 1.2-4.1ubuntu2.24.0.4.1+esm1
+Depends: libxmltok1t64 (= 1.2-4.1ubuntu2.24.0.4.1+esm1), libc6-dev | libc-dev
+Filename: pool/main/libx/libxmltok/libxmltok1-dev_1.2-4.1ubuntu2.24.0.4.1+esm1_arm64.deb
+Size: 62346
+SHA256: be061653ea4eb31645e7130ddc4a92eeaac0ed9d809bc995ade21d1f9425b4ac
+SHA1: 6fd15d5f71147b27e78f4a138b6cca60d47aa84e
+MD5sum: 655e67e7b014a45d00871b3a4e070ec9
+Description: XML Parser Toolkit, developer libraries
+ Libraries for XML parsing in C.  It aims to be fully conforming. It
+ is currently not a validating XML processor.
+ .
+ The library libxmltok contains a low-level library for tokenizing
+ XML.  The library libxmlparse contains an XML parser library which is
+ built on top of the xmltok library.
+ .
+ This package contains the development headers.
+Original-Maintainer: Debian XML/SGML Group <debian-xml-sgml-pkgs@lists.alioth.debian.org>
+
+Package: libxmltok1t64
+Source: libxmltok
+Priority: optional
+Section: libs
+Installed-Size: 218
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: arm64
+Version: 1.2-4.1ubuntu2.24.0.4.1+esm1
+Replaces: libxmltok1
+Provides: libxmltok1 (= 1.2-4.1ubuntu2.24.0.4.1+esm1)
+Depends: libc6 (>= 2.17)
+Breaks: libxmltok1 (<< 1.2-4.1ubuntu2.24.0.4.1+esm1)
+Filename: pool/main/libx/libxmltok/libxmltok1t64_1.2-4.1ubuntu2.24.0.4.1+esm1_arm64.deb
+Size: 50060
+SHA256: d7bf07490ad3c62d22802b77616d4ffe7ba5af58e791a12ced6424872fc4967a
+SHA1: 65e4b040f825a15e10b360e89bb3c782a8450967
+MD5sum: 64d97e8b0d3672b4acf525b8e7444e26
+Description: XML Parser Toolkit, runtime libraries
+ Libraries for XML parsing in C.  It aims to be fully conforming. It
+ is currently not a validating XML processor.
+ .
+ The library libxmltok contains a low-level library for tokenizing
+ XML.  The library libxmlparse contains an XML parser library which is
+ built on top of the xmltok library.
+Original-Maintainer: Debian XML/SGML Group <debian-xml-sgml-pkgs@lists.alioth.debian.org>
+
+Package: virtuoso-minimal
+Source: virtuoso-opensource
+Priority: optional
+Section: metapackages
+Installed-Size: 32
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 7.2.5.1+dfsg1-0.8ubuntu0.1~esm2
+Depends: libvirtodbc0 (>= 7.2.5.1+dfsg1-0.8ubuntu0.1~esm2), virtuoso-opensource-7-bin (>= 7.2.5.1+dfsg1-0.8ubuntu0.1~esm2)
+Filename: pool/main/v/virtuoso-opensource/virtuoso-minimal_7.2.5.1+dfsg1-0.8ubuntu0.1~esm2_all.deb
+Size: 8544
+SHA256: 77e6a7406ba261b5c55940aead508513123eab08b360a6a9be8f395c7cd898b0
+SHA1: f6dd765b850d246e422e97e9ee9f9f3adfcd9763
+MD5sum: b0ae7763ace64d21e171b0ef1fe8c767
+Description: high-performance database - core dependency package
+ OpenLink Virtuoso is a high-performance object-relational SQL database.
+ It provides transactions, a smart SQL compiler, hot backup, SQL:1999
+ support, a powerful stored-procedure language supporting server-side
+ Java or .NET, and more. It supports all major data-access interfaces,
+ including ODBC, JDBC, ADO.NET, and OLE/DB.
+ .
+ This is an empty package depending on the current "best" version of the
+ core Virtuoso binaries, as recommended by the maintainers (currently
+ virtuoso-opensource-7-bin). This should usually be depended on by
+ all packages which use Virtuoso as an embedded database.
+Original-Maintainer: Debian Science Maintainers <debian-science-maintainers@lists.alioth.debian.org>
+
+Package: virtuoso-opensource
+Priority: optional
+Section: metapackages
+Installed-Size: 37
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 7.2.5.1+dfsg1-0.8ubuntu0.1~esm2
+Recommends: virtuoso-server, virtuoso-vad-conductor, virtuoso-vsp-startpage
+Suggests: virtuoso-vad-bpel, virtuoso-vad-dbpedia, virtuoso-vad-demo, virtuoso-vad-doc, virtuoso-vad-facetedbrowser, virtuoso-vad-isparql, virtuoso-vad-ods, virtuoso-vad-rdfmappers, virtuoso-vad-sparqldemo, virtuoso-vad-syncml, virtuoso-vad-tutorial
+Depends: virtuoso-opensource-7 (>= 7.2.5.1+dfsg1-0.8ubuntu0.1~esm2)
+Filename: pool/main/v/virtuoso-opensource/virtuoso-opensource_7.2.5.1+dfsg1-0.8ubuntu0.1~esm2_all.deb
+Size: 10196
+SHA256: c09a89eca4de3b7dc68c40694c2ac9377450cfb2c9d6207b0064b5a9c47f5eeb
+SHA1: dd62b3d0f3bed62d8a69b7187605b7944598fae8
+MD5sum: 7ee5c2449cb7a199dfe58c3b6b587671
+Description: high-performance database
+ OpenLink Virtuoso is a high-performance object-relational SQL database.
+ It provides transactions, a smart SQL compiler, hot backup, SQL:1999
+ support, a powerful stored-procedure language supporting server-side
+ Java or .NET, and more. It supports all major data-access interfaces,
+ including ODBC, JDBC, ADO.NET, and OLE/DB.
+ .
+ Virtuoso supports SPARQL embedded into SQL for querying RDF data stored
+ in its database. SPARQL benefits from low-level support in the engine
+ itself, such as SPARQL-aware type-casting rules and a dedicated IRI data
+ type.
+ .
+ Install this metapackage for the full suite of packages that make up
+ Virtuoso OSE ("Open-Source Edition").
+Original-Maintainer: Debian Science Maintainers <debian-science-maintainers@lists.alioth.debian.org>
+
+Package: virtuoso-opensource-7
+Source: virtuoso-opensource
+Priority: optional
+Section: database
+Installed-Size: 1280
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: arm64
+Version: 7.2.5.1+dfsg1-0.8ubuntu0.1~esm2
+Depends: libvirtodbc0 (= 7.2.5.1+dfsg1-0.8ubuntu0.1~esm2), virtuoso-opensource-7-bin (= 7.2.5.1+dfsg1-0.8ubuntu0.1~esm2), virtuoso-opensource-7-common (= 7.2.5.1+dfsg1-0.8ubuntu0.1~esm2), debconf (>= 0.5) | debconf-2.0, libc6 (>= 2.17), libmagickcore-6.q16-7t64 (>= 8:6.9.10.2), libmagickwand-6.q16-7t64 (>= 8:6.9.12.98+dfsg1-5.2build2), libwbxml2-1 (>= 0.11.7+dfsg)
+Filename: pool/main/v/virtuoso-opensource/virtuoso-opensource-7_7.2.5.1+dfsg1-0.8ubuntu0.1~esm2_arm64.deb
+Size: 199444
+SHA256: ab1a6a45f898c2b76a80e8adeb534da3192d4df08f5b003a414f61d594c29955
+SHA1: b4257ff6ad7193cc30491b9639b4513b21231a27
+MD5sum: b018aa4cfc6181a96da7dd01e3a7dcd1
+Description: high-performance database - support files
+ OpenLink Virtuoso is a high-performance object-relational SQL database.
+ It provides transactions, a smart SQL compiler, hot backup, SQL:1999
+ support, a powerful stored-procedure language supporting server-side
+ Java or .NET, and more. It supports all major data-access interfaces,
+ including ODBC, JDBC, ADO.NET, and OLE/DB.
+ .
+ This package provides the Virtuoso server framework.
+Original-Maintainer: Debian Science Maintainers <debian-science-maintainers@lists.alioth.debian.org>
+
+Package: virtuoso-opensource-7-bin
+Source: virtuoso-opensource
+Priority: optional
+Section: database
+Installed-Size: 15326
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: arm64
+Version: 7.2.5.1+dfsg1-0.8ubuntu0.1~esm2
+Replaces: virtuoso-opensource-6.1-bin (<< 7)
+Depends: libbz2-1.0, libc6 (>= 2.38), libldap2 (>= 2.6.2), liblzma5 (>= 5.1.1alpha+20120614), libminizip1t64, libpcre2-8-0 (>= 10.32), libreadline8t64 (>= 6.0), libssl3t64 (>= 3.0.0), libtirpc3t64 (>= 1.0.2), zlib1g (>= 1:1.1.4)
+Breaks: virtuoso-opensource-6.1-bin (<< 7)
+Filename: pool/main/v/virtuoso-opensource/virtuoso-opensource-7-bin_7.2.5.1+dfsg1-0.8ubuntu0.1~esm2_arm64.deb
+Size: 4204114
+SHA256: 65d67e1e009251ff3e43d0074d7ae289acf38ca4f210a6fe41a26eb84d09f647
+SHA1: c9325db975309b0487c9b2026fde36abaee99d76
+MD5sum: fc97756ee63d6a819313f76d2e3ea015
+Description: high-performance database - binaries
+ OpenLink Virtuoso is a high-performance object-relational SQL database.
+ It provides transactions, a smart SQL compiler, hot backup, SQL:1999
+ support, a powerful stored-procedure language supporting server-side
+ Java or .NET, and more. It supports all major data-access interfaces,
+ including ODBC, JDBC, ADO.NET, and OLE/DB.
+ .
+ This package contains the core Virtuoso binaries.
+Original-Maintainer: Debian Science Maintainers <debian-science-maintainers@lists.alioth.debian.org>
+
+Package: virtuoso-opensource-7-common
+Source: virtuoso-opensource
+Priority: optional
+Section: database
+Installed-Size: 104
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: arm64
+Version: 7.2.5.1+dfsg1-0.8ubuntu0.1~esm2
+Replaces: virtuoso-opensource-6.1-common (<< 7)
+Depends: libc6 (>= 2.38), libssl3t64 (>= 3.0.0)
+Breaks: virtuoso-opensource-6.1-common (<< 7)
+Filename: pool/main/v/virtuoso-opensource/virtuoso-opensource-7-common_7.2.5.1+dfsg1-0.8ubuntu0.1~esm2_arm64.deb
+Size: 27428
+SHA256: 5e6e9ba1cc694dcba67528f63bd13a656f5164c49bd00bf7ac6d11a305789776
+SHA1: ad45eac8f6d44f76a1beb79a7245d32a23ed84f6
+MD5sum: aea61eacbd4db4892cae108d0bcdba39
+Description: high-performance database - common files
+ OpenLink Virtuoso is a high-performance object-relational SQL database.
+ It provides transactions, a smart SQL compiler, hot backup, SQL:1999
+ support, a powerful stored-procedure language supporting server-side
+ Java or .NET, and more. It supports all major data-access interfaces,
+ including ODBC, JDBC, ADO.NET, and OLE/DB.
+ .
+ This package contains files common to all versions of Virtuoso.
+Original-Maintainer: Debian Science Maintainers <debian-science-maintainers@lists.alioth.debian.org>
+
+Package: virtuoso-server
+Source: virtuoso-opensource
+Priority: optional
+Section: metapackages
+Installed-Size: 32
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 7.2.5.1+dfsg1-0.8ubuntu0.1~esm2
+Depends: virtuoso-opensource-7 (>= 7.2.5.1+dfsg1-0.8ubuntu0.1~esm2)
+Filename: pool/main/v/virtuoso-opensource/virtuoso-server_7.2.5.1+dfsg1-0.8ubuntu0.1~esm2_all.deb
+Size: 8508
+SHA256: 8b65fc1784d2d0e3e63422783929fba8cfb9750d0fab57fc7b573d00e3194165
+SHA1: 588cd04f3c679108a4fcbc2b8423ed0a91e1f5f9
+MD5sum: 177f3fe9f8aaec816fa12fc16028308e
+Description: high-performance database - server dependency package
+ OpenLink Virtuoso is a high-performance object-relational SQL database.
+ It provides transactions, a smart SQL compiler, hot backup, SQL:1999
+ support, a powerful stored-procedure language supporting server-side
+ Java or .NET, and more. It supports all major data-access interfaces,
+ including ODBC, JDBC, ADO.NET, and OLE/DB.
+ .
+ This is an empty package depending on the current "best" version of the
+ Virtuoso server framework, as recommended by the maintainers (currently
+ virtuoso-opensource-7). Install this package if in doubt about
+ which version you need.
+Original-Maintainer: Debian Science Maintainers <debian-science-maintainers@lists.alioth.debian.org>
+
+Package: virtuoso-vad-bpel
+Source: virtuoso-opensource
+Priority: optional
+Section: database
+Installed-Size: 1546
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 7.2.5.1+dfsg1-0.8ubuntu0.1~esm2
+Depends: virtuoso-opensource
+Filename: pool/main/v/virtuoso-opensource/virtuoso-vad-bpel_7.2.5.1+dfsg1-0.8ubuntu0.1~esm2_all.deb
+Size: 229424
+SHA256: 1543d00748e927dfd37707ef8e5961b33a05e0ec398c881e0181c9a4e07259dd
+SHA1: b385d383c2321b3af640da76fab6040aa20e9414
+MD5sum: a196df22c04105e9e576616955cd6dc7
+Description: high-performance database - BPEL module
+ OpenLink Virtuoso is a high-performance object-relational SQL database.
+ It provides transactions, a smart SQL compiler, hot backup, SQL:1999
+ support, a powerful stored-procedure language supporting server-side
+ Java or .NET, and more. It supports all major data-access interfaces,
+ including ODBC, JDBC, ADO.NET, and OLE/DB.
+ .
+ This package contains the Virtuoso Application Distribution module
+ for Business Process Execution Language support.
+Original-Maintainer: Debian Science Maintainers <debian-science-maintainers@lists.alioth.debian.org>
+
+Package: virtuoso-vad-conductor
+Source: virtuoso-opensource
+Priority: optional
+Section: database
+Installed-Size: 7782
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 7.2.5.1+dfsg1-0.8ubuntu0.1~esm2
+Depends: virtuoso-opensource
+Filename: pool/main/v/virtuoso-opensource/virtuoso-vad-conductor_7.2.5.1+dfsg1-0.8ubuntu0.1~esm2_all.deb
+Size: 1283646
+SHA256: ba4fa4d39192ffdb289b2a7eaed3ca629f5022b61b7576aae9d461528a13123e
+SHA1: 01111383ddf6a6405faef970e52311070f1f0cc9
+MD5sum: e3df79aff5cdce25761df3ceb5c1637b
+Description: high-performance database - conductor module
+ OpenLink Virtuoso is a high-performance object-relational SQL database.
+ It provides transactions, a smart SQL compiler, hot backup, SQL:1999
+ support, a powerful stored-procedure language supporting server-side
+ Java or .NET, and more. It supports all major data-access interfaces,
+ including ODBC, JDBC, ADO.NET, and OLE/DB.
+ .
+ This package contains the Virtuoso Application Distribution module
+ for the administration interface.
+Original-Maintainer: Debian Science Maintainers <debian-science-maintainers@lists.alioth.debian.org>
+
+Package: virtuoso-vad-demo
+Source: virtuoso-opensource
+Priority: optional
+Section: doc
+Installed-Size: 23534
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 7.2.5.1+dfsg1-0.8ubuntu0.1~esm2
+Depends: virtuoso-opensource
+Filename: pool/main/v/virtuoso-opensource/virtuoso-vad-demo_7.2.5.1+dfsg1-0.8ubuntu0.1~esm2_all.deb
+Size: 11009698
+SHA256: c755d50ceac391ab714bee5d8ea77123dc683ed14164ded81b4c88635a887297
+SHA1: 636e3be48c4cba341597e2f8e2504d33fb081e9c
+MD5sum: 6690280a7ca8c84a926f4b22082aa3e0
+Description: high-performance database - demo module
+ OpenLink Virtuoso is a high-performance object-relational SQL database.
+ It provides transactions, a smart SQL compiler, hot backup, SQL:1999
+ support, a powerful stored-procedure language supporting server-side
+ Java or .NET, and more. It supports all major data-access interfaces,
+ including ODBC, JDBC, ADO.NET, and OLE/DB.
+ .
+ This package contains the Virtuoso Application Distribution module
+ for the demonstration application.
+Original-Maintainer: Debian Science Maintainers <debian-science-maintainers@lists.alioth.debian.org>
+
+Package: virtuoso-vad-doc
+Source: virtuoso-opensource
+Priority: optional
+Section: doc
+Installed-Size: 98829
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 7.2.5.1+dfsg1-0.8ubuntu0.1~esm2
+Depends: virtuoso-opensource
+Filename: pool/main/v/virtuoso-opensource/virtuoso-vad-doc_7.2.5.1+dfsg1-0.8ubuntu0.1~esm2_all.deb
+Size: 73327608
+SHA256: 4b4fb61426a376d51d8aeb55192751198b50004cee19577b772e316f0cd99a0a
+SHA1: c5c9829af3117f8d76f91062e7f32e5c77a5293a
+MD5sum: b7b33db3eaa902491a65868e60b5fd95
+Description: high-performance database - documentation module
+ OpenLink Virtuoso is a high-performance object-relational SQL database.
+ It provides transactions, a smart SQL compiler, hot backup, SQL:1999
+ support, a powerful stored-procedure language supporting server-side
+ Java or .NET, and more. It supports all major data-access interfaces,
+ including ODBC, JDBC, ADO.NET, and OLE/DB.
+ .
+ This package contains the Virtuoso Application Distribution module
+ for the documentation.
+Original-Maintainer: Debian Science Maintainers <debian-science-maintainers@lists.alioth.debian.org>
+
+Package: virtuoso-vad-isparql
+Source: virtuoso-opensource
+Priority: optional
+Section: database
+Installed-Size: 2736
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 7.2.5.1+dfsg1-0.8ubuntu0.1~esm2
+Depends: virtuoso-opensource
+Filename: pool/main/v/virtuoso-opensource/virtuoso-vad-isparql_7.2.5.1+dfsg1-0.8ubuntu0.1~esm2_all.deb
+Size: 697170
+SHA256: 873ed32c1dbba9f4402ff4e1a6992431f9db7297c924e2bd319942ce8c4fc0a6
+SHA1: dae73feb5f10ef762faa62c47f918b814dff11ba
+MD5sum: bcf859dc4955791d5cd63fa891af066a
+Description: high-performance database - iSPARQL module
+ OpenLink Virtuoso is a high-performance object-relational SQL database.
+ It provides transactions, a smart SQL compiler, hot backup, SQL:1999
+ support, a powerful stored-procedure language supporting server-side
+ Java or .NET, and more. It supports all major data-access interfaces,
+ including ODBC, JDBC, ADO.NET, and OLE/DB.
+ .
+ This package contains the Virtuoso Application Distribution module
+ for iSPARQL support.
+Original-Maintainer: Debian Science Maintainers <debian-science-maintainers@lists.alioth.debian.org>
+
+Package: virtuoso-vad-ods
+Source: virtuoso-opensource
+Priority: optional
+Section: database
+Installed-Size: 21986
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 7.2.5.1+dfsg1-0.8ubuntu0.1~esm2
+Depends: virtuoso-opensource
+Filename: pool/main/v/virtuoso-opensource/virtuoso-vad-ods_7.2.5.1+dfsg1-0.8ubuntu0.1~esm2_all.deb
+Size: 4228650
+SHA256: 823247f8f2f46ca34ee2680a27efd511ce282f5b0f5653362ee96556431de1a2
+SHA1: 47927ea9ef136c73e250b545a5bf19ed44451252
+MD5sum: 9798b83897eb5a2b713a64e486ed99cc
+Description: high-performance database - Open Data Spaces module
+ OpenLink Virtuoso is a high-performance object-relational SQL database.
+ It provides transactions, a smart SQL compiler, hot backup, SQL:1999
+ support, a powerful stored-procedure language supporting server-side
+ Java or .NET, and more. It supports all major data-access interfaces,
+ including ODBC, JDBC, ADO.NET, and OLE/DB.
+ .
+ This package contains the Virtuoso Application Distribution module
+ for Open Data Spaces support.
+Original-Maintainer: Debian Science Maintainers <debian-science-maintainers@lists.alioth.debian.org>
+
+Package: virtuoso-vad-rdfmappers
+Source: virtuoso-opensource
+Priority: optional
+Section: database
+Installed-Size: 4878
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 7.2.5.1+dfsg1-0.8ubuntu0.1~esm2
+Depends: virtuoso-opensource
+Filename: pool/main/v/virtuoso-opensource/virtuoso-vad-rdfmappers_7.2.5.1+dfsg1-0.8ubuntu0.1~esm2_all.deb
+Size: 2435630
+SHA256: 9c77bfb7794a7a68c57fb1c08b480ba83aedd45199566b4dc9d13991e9869ae2
+SHA1: b534e25a34fac64c3ad8f504f4ec7aa3181b9f2f
+MD5sum: 8aaea1f970e33022bf81fb213a54f76a
+Description: high-performance database - RDF mappers module
+ OpenLink Virtuoso is a high-performance object-relational SQL database.
+ It provides transactions, a smart SQL compiler, hot backup, SQL:1999
+ support, a powerful stored-procedure language supporting server-side
+ Java or .NET, and more. It supports all major data-access interfaces,
+ including ODBC, JDBC, ADO.NET, and OLE/DB.
+ .
+ This package contains the Virtuoso Application Distribution module
+ for the RDF mappers application.
+Original-Maintainer: Debian Science Maintainers <debian-science-maintainers@lists.alioth.debian.org>
+
+Package: virtuoso-vad-sparqldemo
+Source: virtuoso-opensource
+Priority: optional
+Section: database
+Installed-Size: 3432
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 7.2.5.1+dfsg1-0.8ubuntu0.1~esm2
+Depends: virtuoso-opensource
+Filename: pool/main/v/virtuoso-opensource/virtuoso-vad-sparqldemo_7.2.5.1+dfsg1-0.8ubuntu0.1~esm2_all.deb
+Size: 554090
+SHA256: a076863858d9b3e0be401fd2b314d961ca0c07aa234fb9b5be484340bafe203d
+SHA1: 8ada5dbcf00d31f634a464ed7b942c00e7fd7181
+MD5sum: f00dc119315ba9419b83047c951e9b0e
+Description: high-performance database - SPARQL demo module
+ OpenLink Virtuoso is a high-performance object-relational SQL database.
+ It provides transactions, a smart SQL compiler, hot backup, SQL:1999
+ support, a powerful stored-procedure language supporting server-side
+ Java or .NET, and more. It supports all major data-access interfaces,
+ including ODBC, JDBC, ADO.NET, and OLE/DB.
+ .
+ This package contains the Virtuoso Application Distribution module
+ for the SPARQL demo application.
+Original-Maintainer: Debian Science Maintainers <debian-science-maintainers@lists.alioth.debian.org>
+
+Package: virtuoso-vad-syncml
+Source: virtuoso-opensource
+Priority: optional
+Section: database
+Installed-Size: 123
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 7.2.5.1+dfsg1-0.8ubuntu0.1~esm2
+Depends: virtuoso-opensource
+Filename: pool/main/v/virtuoso-opensource/virtuoso-vad-syncml_7.2.5.1+dfsg1-0.8ubuntu0.1~esm2_all.deb
+Size: 27790
+SHA256: 1758b18ceb0ab4bc1b6b569bf1d950220315d96aec559ca96255e4bda360f59b
+SHA1: 98d9cabfe65c695a24cac926e4e64d1fc0ceebea
+MD5sum: dfc47a398e63135d000984715dd71ecc
+Description: high-performance database - SyncML module
+ OpenLink Virtuoso is a high-performance object-relational SQL database.
+ It provides transactions, a smart SQL compiler, hot backup, SQL:1999
+ support, a powerful stored-procedure language supporting server-side
+ Java or .NET, and more. It supports all major data-access interfaces,
+ including ODBC, JDBC, ADO.NET, and OLE/DB.
+ .
+ This package contains the Virtuoso Application Distribution module
+ for Synchronization Markup Language support.
+Original-Maintainer: Debian Science Maintainers <debian-science-maintainers@lists.alioth.debian.org>
+
+Package: virtuoso-vad-tutorial
+Source: virtuoso-opensource
+Priority: optional
+Section: doc
+Installed-Size: 21891
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 7.2.5.1+dfsg1-0.8ubuntu0.1~esm2
+Depends: virtuoso-opensource
+Filename: pool/main/v/virtuoso-opensource/virtuoso-vad-tutorial_7.2.5.1+dfsg1-0.8ubuntu0.1~esm2_all.deb
+Size: 2123094
+SHA256: 7960b41d7565cb964c3e021631113d2850471d533e79b4e0459c136df254107e
+SHA1: 38ea2d5c36aca1b16ede3dfd7cca1884e54d8f49
+MD5sum: 709a24fa800b9f8a51b0c0db0df2d448
+Description: high-performance database - tutorial module
+ OpenLink Virtuoso is a high-performance object-relational SQL database.
+ It provides transactions, a smart SQL compiler, hot backup, SQL:1999
+ support, a powerful stored-procedure language supporting server-side
+ Java or .NET, and more. It supports all major data-access interfaces,
+ including ODBC, JDBC, ADO.NET, and OLE/DB.
+ .
+ This package contains the Virtuoso Application Distribution module
+ for the tutorial application.
+Original-Maintainer: Debian Science Maintainers <debian-science-maintainers@lists.alioth.debian.org>
+
+Package: virtuoso-vsp-startpage
+Source: virtuoso-opensource
+Priority: optional
+Section: database
+Installed-Size: 1237
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 7.2.5.1+dfsg1-0.8ubuntu0.1~esm2
+Depends: virtuoso-opensource
+Filename: pool/main/v/virtuoso-opensource/virtuoso-vsp-startpage_7.2.5.1+dfsg1-0.8ubuntu0.1~esm2_all.deb
+Size: 429934
+SHA256: 2ce6a6e97694e6e5b27cf82baf01bddc18de5039c795c2bbc497073e5b6ab4e6
+SHA1: a776f1e3922d9f18111b5a4e3ddc30c966e36d9f
+MD5sum: 75bea7ff581cca3c0e262683d3d20b99
+Description: high-performance database - web interface files
+ OpenLink Virtuoso is a high-performance object-relational SQL database.
+ It provides transactions, a smart SQL compiler, hot backup, SQL:1999
+ support, a powerful stored-procedure language supporting server-side
+ Java or .NET, and more. It supports all major data-access interfaces,
+ including ODBC, JDBC, ADO.NET, and OLE/DB.
+ .
+ This package contains the files for Virtuoso's web interface.
+Original-Maintainer: Debian Science Maintainers <debian-science-maintainers@lists.alioth.debian.org>
+
+Package: znc
+Priority: optional
+Section: net
+Installed-Size: 9699
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: arm64
+Version: 1.9.0-2ubuntu0.1~esm2
+Recommends: znc-tcl, znc-perl, znc-python
+Replaces: znc-extra, znc-webadmin
+Depends: libargon2-1 (>= 0~20171227), libboost-locale1.83.0 (>= 1.83.0), libc6 (>= 2.38), libgcc-s1 (>= 3.3.1), libicu74 (>= 74.1-1~), libsasl2-2 (>= 2.1.28+dfsg1), libssl3t64 (>= 3.0.0), libstdc++6 (>= 13.1), zlib1g (>= 1:1.1.4), adduser, openssl
+Conflicts: znc-extra, znc-webadmin
+Breaks: znc-extra (<< 1.9.0-2ubuntu0.1~esm2)
+Filename: pool/main/z/znc/znc_1.9.0-2ubuntu0.1~esm2_arm64.deb
+Size: 1928776
+SHA256: 4d87a8c8bdcf91d63f2ac0f8acb9da70d3d2bf73304c17c13e0e14871ab68f5f
+SHA1: 39b8960bfd7bf722c61c6dd3d7a4af20bb6926ed
+MD5sum: 765f38b93251113ca1273a2548f652a6
+Description: advanced modular IRC bouncer
+ znc is an IRC proxy. It runs as a daemon and connects to IRC server,
+ then allows you to connect from a workstation and work as the user that
+ is logged in to the IRC server. After you disconnect, it maintains the
+ connection to the server. It acts like any normal IRC server, so you can
+ use any IRC client to connect to it.
+ .
+ Some of its features include support for multiple users, multiple clients,
+ and multiple IRC servers; playback buffers to catch up with what happened
+ while you were detached, SSL encryption, DCC proxying, and a plugin
+ interface with many plugins supporting other features.
+Original-Maintainer: Patrick Matthäi <pmatthaei@debian.org>
+
+Package: znc-backlog
+Source: znc (1.9.0-2ubuntu0.1~esm2)
+Priority: optional
+Section: net
+Installed-Size: 87
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: arm64
+Version: 0.20180824+1.9.0-2ubuntu0.1~esm2
+Depends: libc6 (>= 2.32), libgcc-s1 (>= 3.3.1), libstdc++6 (>= 13.1), znc (= 1.9.0-2ubuntu0.1~esm2)
+Enhances: znc
+Filename: pool/main/z/znc/znc-backlog_0.20180824+1.9.0-2ubuntu0.1~esm2_arm64.deb
+Size: 25596
+SHA256: fc0d9d1393cf05b1c6acfd66456299811931edbd70a49fb1aedda692b4f3c04f
+SHA1: a64393bf8dea555e7eb875dc20cb1a20f20e081f
+MD5sum: f2d6566e485087e26dbc76c073174565
+Description: module for requesting backlog from znc bouncer
+ znc-backlog is a third party ZNC module that makes it easy to request backlog.
+ Its intended use is for when you have just launched your IRC client and gotten
+ a few lines of backlog sent to you, but want to read more. Instead of having
+ to deal with shelling into the box where you run ZNC and manually sifting
+ through the logs, you can issue a short command in your IRC client to request
+ any amount of the most recent lines of log.
+ .
+ For more information about ZNC, see the znc package.
+Original-Maintainer: Patrick Matthäi <pmatthaei@debian.org>
+
+Package: znc-dev
+Source: znc
+Priority: optional
+Section: net
+Installed-Size: 397
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: arm64
+Version: 1.9.0-2ubuntu0.1~esm2
+Recommends: g++
+Depends: znc (>= 1.9.0-2ubuntu0.1~esm2), cmake, libicu-dev, libssl-dev, pkg-config, tcl-dev, python3-dev
+Filename: pool/main/z/znc/znc-dev_1.9.0-2ubuntu0.1~esm2_arm64.deb
+Size: 74412
+SHA256: 1b0b6d8e5fad7cdaf8ab36a93f8282b85fcd723f5b1772de91a59c4702cb80c1
+SHA1: 5328ff81f7203541addefade96c8b4ce8baf9391
+MD5sum: 639a291fce5b34885ae74befcc0452fe
+Description: advanced modular IRC bouncer (development headers)
+ znc is an IRC proxy. It runs as a daemon and connects to IRC server,
+ then allows you to connect from a workstation and work as the user that
+ is logged in to the IRC server. After you disconnect, it maintains the
+ connection to the server. It acts like any normal IRC server, so you can
+ use any IRC client to connect to it.
+ .
+ Some of its features include support for multiple users, multiple clients,
+ and multiple IRC servers; playback buffers to catch up with what happened
+ while you were detached, SSL encryption, DCC proxying, and a plugin
+ interface with many plugins supporting other features.
+ .
+ This package contains the znc development headers for developing modules.
+Original-Maintainer: Patrick Matthäi <pmatthaei@debian.org>
+
+Package: znc-perl
+Source: znc
+Priority: optional
+Section: net
+Installed-Size: 4005
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: arm64
+Version: 1.9.0-2ubuntu0.1~esm2
+Depends: libc6 (>= 2.38), libgcc-s1 (>= 3.3.1), libperl5.38t64 (>= 5.38.2), libstdc++6 (>= 13.1), znc (= 1.9.0-2ubuntu0.1~esm2)
+Filename: pool/main/z/znc/znc-perl_1.9.0-2ubuntu0.1~esm2_arm64.deb
+Size: 741112
+SHA256: 167f598b956c3493fc9e1d00c8b883d9af6f4f443d1c8a55b1df0e92d89dcc9b
+SHA1: ea3cc1320a76f9ed57d49df9aa16550aec68947c
+MD5sum: e2754b731c9eed8bbf617cb48c2b6f13
+Description: advanced modular IRC bouncer (Perl extension)
+ znc is an IRC proxy. It runs as a daemon and connects to IRC server,
+ then allows you to connect from a workstation and work as the user that
+ is logged in to the IRC server. After you disconnect, it maintains the
+ connection to the server. It acts like any normal IRC server, so you can
+ use any IRC client to connect to it.
+ .
+ Some of its features include support for multiple users, multiple clients,
+ and multiple IRC servers; playback buffers to catch up with what happened
+ while you were detached, SSL encryption, DCC proxying, and a plugin
+ interface with many plugins supporting other features.
+ .
+ This package contains the znc Perl extension.
+Original-Maintainer: Patrick Matthäi <pmatthaei@debian.org>
+
+Package: znc-push
+Source: znc (1.9.0-2ubuntu0.1~esm2)
+Priority: optional
+Section: net
+Installed-Size: 671
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: arm64
+Version: 1.0.0+git20190521.78d0385+1.9.0-2ubuntu0.1~esm2
+Depends: libc6 (>= 2.32), libcurl4t64 (>= 7.16.2), libgcc-s1 (>= 3.3.1), libstdc++6 (>= 13.1), znc (= 1.9.0-2ubuntu0.1~esm2)
+Enhances: znc
+Filename: pool/main/z/znc/znc-push_1.0.0+git20190521.78d0385+1.9.0-2ubuntu0.1~esm2_arm64.deb
+Size: 196310
+SHA256: ac3fdf084da8f048ab4a7a91981bbd9aba233ba8c00d58c35bcb8373d8cfbbbd
+SHA1: a9dad4a9f9da6e19727dc5aefe76a06375ec484e
+MD5sum: 7239a8c362deae6cb00cce9ac3f470b5
+Description: znc plugin to send push notification to various services
+Description-md5: 67f8797d91f688f06b409f44817454a2
+Original-Maintainer: Patrick Matthäi <pmatthaei@debian.org>
+
+Package: znc-python
+Source: znc
+Priority: optional
+Section: net
+Installed-Size: 4216
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: arm64
+Version: 1.9.0-2ubuntu0.1~esm2
+Depends: libc6 (>= 2.32), libgcc-s1 (>= 3.3.1), libpython3.12t64 (>= 3.12.1), libstdc++6 (>= 13.1), znc (= 1.9.0-2ubuntu0.1~esm2)
+Filename: pool/main/z/znc/znc-python_1.9.0-2ubuntu0.1~esm2_arm64.deb
+Size: 754852
+SHA256: b0eb7062723e0b6a211ab4cd87221c35720acf8bed9568dd4654c084aaa61472
+SHA1: a9999af5da55ddc3139d80b040f8136619715d8a
+MD5sum: f733046bc5e100b1404c5e176de76d3a
+Description: advanced modular IRC bouncer (Python extension)
+ znc is an IRC proxy. It runs as a daemon and connects to IRC server,
+ then allows you to connect from a workstation and work as the user that
+ is logged in to the IRC server. After you disconnect, it maintains the
+ connection to the server. It acts like any normal IRC server, so you can
+ use any IRC client to connect to it.
+ .
+ Some of its features include support for multiple users, multiple clients,
+ and multiple IRC servers; playback buffers to catch up with what happened
+ while you were detached, SSL encryption, DCC proxying, and a plugin
+ interface with many plugins supporting other features.
+ .
+ This package contains the znc Python extension.
+Original-Maintainer: Patrick Matthäi <pmatthaei@debian.org>
+
+Package: znc-tcl
+Source: znc
+Priority: optional
+Section: interpreters
+Installed-Size: 160
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: arm64
+Version: 1.9.0-2ubuntu0.1~esm2
+Depends: libc6 (>= 2.32), libgcc-s1 (>= 3.3.1), libstdc++6 (>= 13.1), libtcl8.6 (>= 8.6.0), znc (= 1.9.0-2ubuntu0.1~esm2)
+Filename: pool/main/z/znc/znc-tcl_1.9.0-2ubuntu0.1~esm2_arm64.deb
+Size: 28750
+SHA256: 7d00574c0f0909c4db5f6abc19f147fd19644f42b59496985f24eab004cecd89
+SHA1: a13230023431596a33569917cd599b6a577ce06d
+MD5sum: e09b3ea6bad0b7c784adb526aa0cdfbd
+Description: advanced modular IRC bouncer (Tcl extension)
+ znc is an IRC proxy. It runs as a daemon and connects to IRC server,
+ then allows you to connect from a workstation and work as the user that
+ is logged in to the IRC server. After you disconnect, it maintains the
+ connection to the server. It acts like any normal IRC server, so you can
+ use any IRC client to connect to it.
+ .
+ Some of its features include support for multiple users, multiple clients,
+ and multiple IRC servers; playback buffers to catch up with what happened
+ while you were detached, SSL encryption, DCC proxying, and a plugin
+ interface with many plugins supporting other features.
+ .
+ This package contains the znc Tcl extension.
+Original-Maintainer: Patrick Matthäi <pmatthaei@debian.org>
+
