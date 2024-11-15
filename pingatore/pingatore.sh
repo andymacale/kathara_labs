@@ -1,5 +1,13 @@
 #!/bin/sh
 
+fileC=$(find . -name pingatore.c)
+
+if [ -n $fileC]; then
+    gcc -o pingatore pingatore.c
+    wait
+    rm -f pingatore.c
+fi
+
 if [ -n "$1" ]; then
     pos=$(pwd)
     cd "$1" || { echo "Percorso '$1\' non trovato"; exit 1; }
