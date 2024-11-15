@@ -22,7 +22,7 @@ fi
 
 # Elaborazione dei file .startup
 if [ -n "$1" ]; then
-    lista=$(find macaleandrea -name "*.startup")
+    lista=$(find . -name "*.startup")
     carattere="\n"
     file=$(echo "$lista" | tr -d "$carattere")
 else
