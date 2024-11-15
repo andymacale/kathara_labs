@@ -39,6 +39,7 @@ programma="./pingatore"
 if [ -f "$programma" ]; then
     echo "Eseguo $programma con argomenti: $arg"
     $programma $arg
+    chmod 777 indirizzi.sh
 else
     echo "Il programma $programma non è stato trovato."
     exit 1
