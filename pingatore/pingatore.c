@@ -19,12 +19,12 @@ int main(int argc, char* argv[]) {
     }
         
     for (ind = 1; ind < argc; ind++) {
-        if (checkFile(argv[ind])) {
+        //if (checkFile(argv[ind])) {
             indirizzi = leggiFile(argv[ind], indirizzi, &inx);
             printf("Il file \'%s\' e\' stato letto!\n", argv[ind]);
-        } else {
-            printf("Il file \'%s\' e\' stato scartato!\n", argv[ind]);
-        }
+        //} else {
+           // printf("Il file \'%s\' e\' stato scartato!\n", argv[ind]);
+        //}
     }
 
     generaFile(indirizzi, inx);

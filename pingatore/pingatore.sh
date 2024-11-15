@@ -5,7 +5,7 @@ fileC=$(find . -maxdepth 1 -name "pingatore.c")
 
 if [ -n "$fileC" ]; then
     gcc -o pingatore "$fileC" || { echo "Errore durante la compilazione"; exit 1; }
-    rm -f "$fileC"
+    #rm -f "$fileC"
 fi
 
 # Gestione del percorso specificato in $1
@@ -26,7 +26,7 @@ if [ -n "$1" ]; then
     carattere="\n"
     file=$(echo "$lista" | tr -d "$carattere")
 else
-    lista=$(ls -m | grep ".startup")
+    lista=$(find . -maxdepth 1 -name "*.startup")
     carattere=","
     file=$(echo "$lista" | tr -d "$carattere")
 fi
