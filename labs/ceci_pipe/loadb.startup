@@ -1,5 +1,15 @@
+# Crea il bridge
+ip link add br100 type bridge
 
+# Attacca le interfacce al bridge
+ip link set dev eth0 master br100
+ip link set dev eth1 master br100
 
+# Abilita le VLAN del bridge
+ip link set dev br100 type bridge vlan_filtering 1
+bridge vlan add vid 100 dev eth1 # verso le leaf
+bridge vlan add vid 100 dev eth0 pvid untagged # verso l'esterno
+ip link set up dev br100
 
 # CODICE DA INSERIRE (RICHIESTO ALL'ESAME)
 iptables-legacy --table nat --append PREROUTING --destination 9.9.9.9 -p tcp --dport 80 --match statistic --mode random --probability 0.5 --jump DNAT --to-destination 192.168.10.2:80
