@@ -1,0 +1,7 @@
+
+
+
+# CODICE DA INSERIRE (RICHIESTO ALL'ESAME)
+iptables-legacy --table nat --append PREROUTING --destination 9.9.9.9 -p tcp --dport 80 --match statistic --mode random --probability 0.5 --jump DNAT --to-destination 192.168.10.2:80
+iptables-legacy --table nat --append PREROUTING --destination 9.9.9.9 -p tcp --dport 80  --jump DNAT --to-destination 192.168.10.3:80
+iptables-legacy --table nat --append POSTROUTING -o eth0 --jump MASQUERADE

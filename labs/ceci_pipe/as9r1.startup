@@ -1,0 +1,4 @@
+ip address add 9.9.9.1/24 dev eth0
+ip address add 89.89.89.2/24 dev eth1
+ip link set dev eth1 mtu 1450
+systemctl start frr

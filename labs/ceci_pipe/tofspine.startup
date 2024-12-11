@@ -1,0 +1,2 @@
+# Le spine devono solo accendere frr
+systemctl start frr

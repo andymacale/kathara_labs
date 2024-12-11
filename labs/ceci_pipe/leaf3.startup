@@ -1,0 +1,26 @@
+# Crea le loopback
+ip address add 10.0.0.3/32 dev lo
+ip route add 10.0.0.3/32 dev lo
+
+# Accendi le interfacce VXLAN
+ip link add vtep5010 type vxlan id 5010 dev lo dstport 4789 local 10.0.0.3 nolearning
+
+# Crea il bridge
+ip link add br100 type bridge
+ip link set br100 addrgenmode none
+
+# Attacca le interfacce del bridge
+ip link set dev vtep5010 master br100 addrgenmode none
+ip link set vtep5010 type bridge_slave neigh_suppress on learning off
+ip link set dev eth0 master br100 # verso il server
+
+# Abilita le VLAN del bridge
+ip link set dev br100 type bridge vlan_filtering 1
+bridge vlan add vid 100 dev vtep5010 pvid untagged # verso nord
+bridge vlan add vid 100 dev eth0 pvid untagged # verso il server (deve fare entrambe in questo caso!)
+
+# Abilita le interfacce
+ip link set up dev vtep5010
+ip link set up dev br100
+
+systemctl start frr
